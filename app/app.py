@@ -1,5 +1,5 @@
 from pathlib import Path
-
+import cv2
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -8,18 +8,24 @@ from plotly.subplots import make_subplots
 import streamlit as st
 from PIL import Image
 import matplotlib.pyplot as plt
-
 from matplotlib.colors import Normalize
+from matplotlib import rcParams
+from sklearn.cluster import KMeans
+import networkx as nx
 from scipy import stats
 
-ROOT = Path(__file__).resolve().parents[1]
-CSV_PATH = ROOT / "app" / "combined_penalty_with_players_enriched.csv"
-IMAGE_PATH = ROOT / "app" / "image.png"
+# ── Paths (portable: CSV sits beside app.py) ────────────────────────────────
+_APP_DIR = Path(__file__).resolve().parent
+_PROJECT_ROOT = _APP_DIR.parent
+CSV_PATH = _APP_DIR / "combined_penalty_with_players_enriched.csv"
+IMAGE_PATH = _APP_DIR / "image.png"
+GOAL_PNG_PATH = _APP_DIR.parent / "Goal.png"
+SQUADS_CSV_PATH = _PROJECT_ROOT / "FinalData" / "world_cup_squadsNew.csv"
 
 plotly_config = {
     'displayModeBar': False,
     'editable': False
-}   
+}
 
 OUTCOME_COLORS = {
     "goal": "#16a34a",
@@ -48,6 +54,13 @@ TEXT_ZONE_TO_NUMERIC = {
 
 POSITION_LABELS = {"D": "Defender", "F": "Forward", "G": "Goalkeeper", "M": "Midfielder"}
 
+POSITION_COLORS = {
+    "Defender": "#38bdf8",
+    "Forward": "#16a34a",
+    "Goalkeeper": "#f59e0b",
+    "Midfielder": "#818cf8",
+}
+
 st.set_page_config(
     page_title="WC 2026 · Penalty Story",
     page_icon="wc2026.svg",
@@ -55,6 +68,7 @@ st.set_page_config(
 )
 
 
+# ── Data loading ─────────────────────────────────────────────────────────────
 @st.cache_data(show_spinner=False)
 def load_data() -> pd.DataFrame:
     df = pd.read_csv(CSV_PATH)
@@ -64,10 +78,38 @@ def load_data() -> pd.DataFrame:
     df["zone_id"] = df["zone"].str.lower().map(TEXT_ZONE_TO_NUMERIC)
     df["position_label"] = df["position"].map(POSITION_LABELS).fillna(df["position"])
     df["conversion_rate"] = df["total_scored"] / df["total_attempts"].replace(0, np.nan)
-    df["penalty_type"] = df["type"].fillna("unknown")
+    df["penalty_type"] = df["type"]
     return df
 
 
+@st.cache_data(show_spinner=False)
+def load_squads() -> pd.DataFrame:
+    """Load WC 2026 squad list — used to filter GKs in the network tab."""
+    return pd.read_csv(SQUADS_CSV_PATH)
+
+
+def get_wc_gk_names() -> set:
+    """Return the set of goalkeeper names from the WC 2026 squads."""
+    sq = load_squads()
+    return set(sq[sq["Pos."] == "GK"]["Player"].str.strip())
+
+
+# ── Helpers ──────────────────────────────────────────────────────────────────
+def data_coverage_note(df: pd.DataFrame, column: str, label: str = None):
+    """Emit an st.caption disclosing how many rows have data for *column*."""
+    label = label or column
+    total = len(df)
+    available = int(df[column].notna().sum())
+    pct = available / total * 100 if total else 0
+    st.caption(f"Data coverage for <b>{label}</b>: {available:,} / {total:,} "f"({pct:.1f}%)", unsafe_allow_html=True)
+   
+
+
+def insight(text: str):
+    st.markdown(f'<div class="insight-box"> {text}</div>', unsafe_allow_html=True)
+
+
+# ── Inline filters ───────────────────────────────────────────────────────────
 def inline_filters(df: pd.DataFrame) -> pd.DataFrame:
     with st.expander("Filters", expanded=True):
         row1_c1, row1_c2, row1_c3, row1_c4 = st.columns([1, 1, 1, 1])
@@ -150,9 +192,7 @@ def inline_filters(df: pd.DataFrame) -> pd.DataFrame:
     return flt
 
 
-_UNCOLORED_CELLS = {(0, 1), (0, 3), (1, 0), (2, 0)}
-
-
+# ── Goal-zone heatmap drawing ────────────────────────────────────────────────
 def draw_goal_plot(zones: dict, title: str, colors: bool = True):
     image = np.asarray(Image.open(IMAGE_PATH).convert("RGB"))
     grid_values = {(i, j): 0 for i in range(4) for j in range(5)}
@@ -232,9 +272,57 @@ def draw_goal_plot(zones: dict, title: str, colors: bool = True):
     return fig
 
 
-def insight(text: str):
-    st.markdown(f'<div class="insight-box">💡 {text}</div>', unsafe_allow_html=True)
+def draw_goal_shot_scatter(df: pd.DataFrame):
+    """Scatter-plot actual shot coordinates on the goal image, coloured by outcome
+    (or by k-means cluster when *cluster* = True)."""
+    if df.empty:
+        st.warning("No shot placement data available for current filters.")
+        return None
+    
+    goal_width = 306
+    goal_height = 172
+    # Scale the points for right displaying
+    x_scale = 2.95
+    y_scale = 1.34375
 
+    # Convert coordinates to numeric, converting string penalties/NaNs into NaNs
+    clean_df = df.copy()
+    clean_df['x'] = pd.to_numeric(clean_df['x'], errors='coerce')
+    clean_df['y'] = pd.to_numeric(clean_df['y'], errors='coerce')
+    
+    clean_df = clean_df.dropna(subset=['x', 'y'])
+    
+    if clean_df.empty:
+        st.warning("No valid numerical coordinates available to plot.")
+        return None
+
+    clean_df['scaled_x'] = clean_df['x'] * x_scale
+    clean_df['scaled_y'] = clean_df['y'] * y_scale
+
+    fig, ax = plt.subplots()
+    
+    
+    image = cv2.imread('image.png')
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    ax.imshow(image)
+
+
+    ax.scatter(clean_df['scaled_x'], clean_df['scaled_y'], c=clean_df['outcome'].map(OUTCOME_COLORS), edgecolors='black', s=100, alpha=0.8)
+    plt.title('K-means Clustering of Penalty Shoot Locations')
+    plt.xlabel('X coordinate (left to right)')
+    plt.ylabel('Y coordinate (top to bottom)')
+
+
+    plt.xlim(0, goal_width)
+    plt.ylim(0, goal_height)
+
+    ax.invert_yaxis()
+
+    # Set plot size
+    fig.set_size_inches(10.7, 8.27)
+
+    
+    return fig
 
 def tab_overview(df: pd.DataFrame):
     total = len(df)
@@ -244,11 +332,11 @@ def tab_overview(df: pd.DataFrame):
     nations = df["Nationality"].nunique()
 
     k1, k2, k3, k4, k5 = st.columns(5)
-    k1.metric("⚽ Penalties", f"{total:,}")
-    k2.metric("✅ Goals", f"{goals:,}")
-    k3.metric("📈 Conversion", f"{conv:.1f}%")
-    k4.metric("👤 Players", f"{players:,}")
-    k5.metric("🌍 Nations", f"{nations:,}")
+    k1.metric("Penalties", f"{total:,}")
+    k2.metric("Goals", f"{goals:,}")
+    k3.metric("Conversion", f"{conv:.1f}%")
+    k4.metric("Players", f"{players:,}")
+    k5.metric("Nations", f"{nations:,}")
 
     st.divider()
 
@@ -270,12 +358,35 @@ def tab_overview(df: pd.DataFrame):
 
     with c2:
         st.subheader("Match vs Shootout")
-        tc = df["penalty_type"].value_counts().reset_index()
-        tc.columns = ["type", "count"]
-        fig = px.pie(tc, values="count", names="type",
-                     color_discrete_sequence=["#38bdf8", "#818cf8"],
-                     template="plotly_dark", hole=0.42)
-        fig.update_layout(margin=dict(t=10, b=0))
+        type_stats = (
+            df.groupby("penalty_type")["is_goal"]
+            .agg(attempts="count", goals="sum")
+            .reset_index()
+        )
+        type_stats["misses"] = type_stats["attempts"] - type_stats["goals"]
+        type_stats["conversion"] = (type_stats["goals"] / type_stats["attempts"] * 100).round(1)
+
+        fig = go.Figure()
+        fig.add_trace(go.Bar(
+            x=type_stats["penalty_type"], y=type_stats["goals"],
+            name="Goals", marker_color="#16a34a",
+            text=type_stats.apply(
+                lambda r: f"{int(r['goals'])} ({r['conversion']:.1f}%)", axis=1
+            ),
+            textposition="inside",
+        ))
+        fig.add_trace(go.Bar(
+            x=type_stats["penalty_type"], y=type_stats["misses"],
+            name="Missed / Saved", marker_color="#64748b",
+            text=type_stats["misses"].astype(int),
+            textposition="inside",
+        ))
+        fig.update_layout(
+            barmode="stack", template="plotly_dark",
+            margin=dict(t=10, b=0),
+            legend=dict(orientation="h", y=1.12),
+            yaxis_title="Count",
+        )
         st.plotly_chart(fig, use_container_width=True, config=plotly_config)
 
     insight(
@@ -323,6 +434,7 @@ def tab_overview(df: pd.DataFrame):
 
 
     st.subheader("Conversion by Match Minute")
+    data_coverage_note(df, "time", "Match minute")
     td = df.dropna(subset=["time"]).copy()
     if not td.empty:
         td["minute_bucket"] = (td["time"].astype(float) // 15 * 15).astype(int)
@@ -344,13 +456,13 @@ def tab_overview(df: pd.DataFrame):
         st.plotly_chart(fig, use_container_width=True, config=plotly_config)
 
 
-    st.subheader("Top 15 Nationalities — Volume vs Conversion")
+    st.subheader("Nationalities — Volume vs Conversion")
     nat = (
         df.groupby("Nationality")["is_goal"]
         .agg(attempts="count", goals="sum")
         .reset_index()
         .sort_values("attempts", ascending=False)
-        .head(15)
+        
     )
     nat["conversion"] = (nat["goals"] / nat["attempts"] * 100).round(1)
     fig = px.scatter(
@@ -375,12 +487,10 @@ def tab_goal_map(df: pd.DataFrame):
     c1, c2 = st.columns([3, 1])
     with c2:
         mode = st.radio("Metric", ["Attempts", "Goals", "Conversion %"], index=0)
-        ptype_filter = st.radio("Penalty type", ["All", "match_penalty", "shootout"], index=0)
+        # Removed duplicate penalty type radio — global filter already applied
 
-    if ptype_filter != "All":
-        zone_df = df[df["penalty_type"] == ptype_filter].dropna(subset=["zone_id"])
-    else:
-        zone_df = df.dropna(subset=["zone_id"])
+    data_coverage_note(df, "zone_id", "Zone")
+    zone_df = df.dropna(subset=["zone_id"])
 
     if zone_df.empty:
         st.warning("No zone data for current filters.")
@@ -400,18 +510,21 @@ def tab_goal_map(df: pd.DataFrame):
         fig = draw_goal_plot(zones_dict, f"Zone — {mode}", colors=True)
         st.pyplot(fig, width='stretch')
 
-    # zone table
-    st.markdown("#### Zone Breakdown Table")
-    zone_tbl = (
-        zone_df.groupby("zone")
-        .agg(attempts=("outcome", "size"), goals=("is_goal", "sum"))
-        .reset_index()
-    )
-    zone_tbl["conversion"] = (zone_tbl["goals"] / zone_tbl["attempts"] * 100).round(1)
-    zone_tbl = zone_tbl.sort_values("attempts", ascending=False)
-    st.dataframe(zone_tbl, width='stretch', hide_index=True)
+    with st.expander("Zone Breakdown Table"):
+            zone_tbl = (
+                zone_df.groupby("zone")
+                .agg(attempts=("outcome", "size"), goals=("is_goal", "sum"))
+                .reset_index()
+            )
+            zone_tbl["conversion"] = (zone_tbl["goals"] / zone_tbl["attempts"] * 100).round(1)
+            zone_tbl = zone_tbl.sort_values("attempts", ascending=False)
+            st.dataframe(zone_tbl, width='stretch', hide_index=True)
 
-    best = zone_tbl.iloc[0]
+    best = zone_df.groupby("zone").agg(
+        attempts=("outcome", "size"), goals=("is_goal", "sum")
+    ).reset_index()
+    best["conversion"] = (best["goals"] / best["attempts"] * 100).round(1)
+    best = best.sort_values("attempts", ascending=False).iloc[0]
     insight(
         f"Most popular zone: <b>{best['zone']}</b> ({int(best['attempts'])} attempts, "
         f"{best['conversion']}% conversion). "
@@ -419,11 +532,26 @@ def tab_goal_map(df: pd.DataFrame):
         "harder for goalkeepers to reach."
     )
 
+
+    st.markdown("---")
+    st.subheader("Shot Placement on Goal Face")
+    scatter_df = df.dropna(subset=["x", "y"]).copy()
+
+    if scatter_df.empty:
+        st.warning("No shot placement data available for current filters.")
+    else:
+        fig = draw_goal_shot_scatter(
+            scatter_df,
+        )
+        if fig is not None:
+            st.pyplot(fig, width='stretch')
+    
+
 def tab_players(df: pd.DataFrame):
-    st.subheader("👤 Player Analytics")
+    st.subheader("Player Analytics")
 
     ps = (
-        df.groupby(["player_name", "Nationality", "position", "club"])
+        df.groupby(["player_name", "Nationality", "position_label", "club"])
         .agg(
             attempts=("outcome", "size"),
             goals=("is_goal", "sum"),
@@ -443,7 +571,7 @@ def tab_players(df: pd.DataFrame):
     )
 
     st.dataframe(
-        visible[["player_name", "Nationality", "position", "club", "attempts", "goals",
+        visible[["player_name", "Nationality", "position_label", "club", "attempts", "goals",
                  "conversion", "Caps", "Intl_Goals", "most_used_zone", "body_part", "Is_Captain"]],
         width='stretch', hide_index=True
     )
@@ -461,14 +589,14 @@ def tab_players(df: pd.DataFrame):
     st.plotly_chart(fig, use_container_width=True, config=plotly_config)
 
     st.markdown("#### Body Part Used vs Outcome")
-    c1, c2 = st.columns(2)
-    with c1:
-        bp_out = (
-            df[df["body_part"].notna()]
-            .groupby(["body_part", "outcome"])["is_goal"]
-            .count()
-            .reset_index(name="count")
-        )
+    data_coverage_note(df, "body_part", "Body part")
+    bp_out = (
+        df[df["body_part"].notna()]
+        .groupby(["body_part", "outcome"])["is_goal"]
+        .count()
+        .reset_index(name="count")
+    )
+    if not bp_out.empty:
         fig = px.bar(
             bp_out, x="body_part", y="count", color="outcome",
             color_discrete_map=OUTCOME_COLORS, template="plotly_dark",
@@ -477,34 +605,119 @@ def tab_players(df: pd.DataFrame):
         fig.update_layout(margin=dict(t=10))
         st.plotly_chart(fig, use_container_width=True, config=plotly_config)
 
-    st.markdown("#### International Caps vs Conversion Rate (scatter)")
-    sub = visible[visible["attempts"] >= 3]
-    fig = px.scatter(
-        sub, x="Caps", y="conversion", size="attempts",
-        color="position", template="plotly_dark",
-        hover_data=["player_name", "club", "attempts"],
-        labels={"conversion": "Conversion %"},
-        color_discrete_map={"D": "#38bdf8", "F": "#16a34a", "G": "#f59e0b", "M": "#818cf8"},
+    
+def tab_distributions(df: pd.DataFrame):
+    st.subheader("Statistical Distributions")
+
+    st.markdown("#### Distribution of Per-Player Conversion Rates")
+    ps = (
+        df.groupby("player_name")["is_goal"]
+        .agg(attempts="count", goals="sum")
+        .reset_index()
     )
-    if len(sub) > 5:
-        m, b, *_ = np.polyfit(sub["Caps"].fillna(0), sub["conversion"].fillna(0), 1, full=False)
-        x_line = np.linspace(sub["Caps"].min(), sub["Caps"].max(), 50)
-        fig.add_trace(go.Scatter(
-            x=x_line, y=m * x_line + b, mode="lines",
-            name="Trend", line=dict(color="#f59e0b", dash="dash")
-        ))
-    fig.update_layout(margin=dict(t=10))
+    ps["conversion"] = (ps["goals"] / ps["attempts"] * 100).round(1)
+    min_att = st.slider(
+        "Minimum attempts for distribution analysis", 1, 15, 3,
+        key="dist_min_att",
+    )
+    ps_filt = ps[ps["attempts"] >= min_att]
+
+    if ps_filt.empty:
+        st.warning("No players match the minimum-attempts filter.")
+        return
+
+    mean_conv = ps_filt["conversion"].mean()
+    median_conv = ps_filt["conversion"].median()
+    std_conv = ps_filt["conversion"].std()
+    skewness = ps_filt["conversion"].skew()
+
+    fig = px.histogram(
+        ps_filt, x="conversion", nbins=30,
+        template="plotly_dark",
+        labels={"conversion": "Conversion Rate (%)", "count": "Players"},
+        color_discrete_sequence=["#38bdf8"],
+    )
+    fig.add_vline(x=mean_conv, line_dash="dash", line_color="#f59e0b",
+                  annotation_text=f"Mean {mean_conv:.1f}%")
+    fig.add_vline(x=median_conv, line_dash="dot", line_color="#16a34a",
+                  annotation_text=f"Median {median_conv:.1f}%")
+
+    # ── Box plot of conversion by position ────────────────────────────────
+    st.markdown("---")
+    st.markdown("#### Conversion Rate by Position (Box Plot)")
+    ps_pos = (
+        df.groupby(["player_name", "position_label"])["is_goal"]
+        .agg(attempts="count", goals="sum")
+        .reset_index()
+    )
+    ps_pos["conversion"] = (ps_pos["goals"] / ps_pos["attempts"] * 100).round(1)
+    ps_pos = ps_pos[ps_pos["attempts"] >= min_att]
+
+    if not ps_pos.empty:
+        fig = px.box(
+            ps_pos, x="position_label", y="conversion",
+            color="position_label",
+            color_discrete_map=POSITION_COLORS,
+            template="plotly_dark",
+            labels={"conversion": "Conversion Rate (%)", "position_label": "Position"},
+            points="outliers",
+        )
+        overall_mean = ps_pos["conversion"].mean()
+        fig.add_hline(y=overall_mean, line_dash="dash", line_color="#f59e0b",
+                      annotation_text=f"Overall mean {overall_mean:.1f}%")
+        fig.update_layout(margin=dict(t=30), showlegend=False,
+                          title_text="Spread of Conversion Rates by Position")
+        st.plotly_chart(fig, use_container_width=True, config=plotly_config)
+
+        # Per-position stats table
+        pos_stats = (
+            ps_pos.groupby("position_label")["conversion"]
+            .agg(["mean", "median", "std", "count"])
+            .round(1)
+            .reset_index()
+        )
+        pos_stats.columns = ["Position", "Mean %", "Median %", "Std Dev", "Players"]
+        st.dataframe(pos_stats, hide_index=True, width='stretch')
+
+    # ── Correlation heatmap ───────────────────────────────────────────────
+    st.markdown("---")
+    st.markdown("#### Correlation Heatmap (Numerical Features)")
+    corr_ps = (
+        df.groupby("player_name")
+        .agg(
+            Caps=("Caps", "first"),
+            total_attempts=("total_attempts", "first"),
+            Intl_Goals=("Goals", "first"),
+            attempts_in_view=("outcome", "size"),
+            goals_in_view=("is_goal", "sum"),
+        )
+        .reset_index()
+    )
+    corr_ps["conversion_rate"] = (
+        corr_ps["goals_in_view"] / corr_ps["attempts_in_view"] * 100
+    ).round(1)
+
+    corr_cols = ["Caps", "total_attempts", "Intl_Goals", "conversion_rate"]
+    corr_matrix = corr_ps[corr_cols].corr().round(3)
+
+    fig = px.imshow(
+        corr_matrix,
+        text_auto=".2f",
+        color_continuous_scale="RdBu_r",
+        zmin=-1, zmax=1,
+        template="plotly_dark"
+    )
+    fig.update_layout(margin=dict(t=30), title_text="Correlation Matrix")
     st.plotly_chart(fig, use_container_width=True, config=plotly_config)
 
     insight(
-        "Each bubble represents a player (size = attempts). "
-        "The trend line shows whether international experience correlates with conversion efficiency."
+        "Strong positive correlations between Caps, attempts, and international goals suggest "
+        "experienced players are also prolific — but conversion rate may not follow the same pattern."
     )
 
 
-
 def tab_advanced(df: pd.DataFrame):
-    st.markdown("### 🎖️ Captain Effect on Conversion")
+    st.markdown("### Captain Effect on Conversion")
 
     cap_grp = (
         df.groupby("Is_Captain")["is_goal"]
@@ -571,7 +784,9 @@ def tab_advanced(df: pd.DataFrame):
 
 {result_md}
     """)
-    st.markdown("### 🔢 Shootout Sequence Analysis")
+
+    # ── Shootout sequence analysis (data-driven insight) ──────────────────
+    st.markdown("### Shootout Sequence Analysis")
     seq_df = df[(df["penalty_type"] == "shootout") & df["sequence"].notna()].copy()
     if not seq_df.empty:
         seq = (
@@ -598,38 +813,224 @@ def tab_advanced(df: pd.DataFrame):
         fig.update_yaxes(title_text="Attempts", secondary_y=False)
         fig.update_yaxes(title_text="Conversion %", secondary_y=True)
         st.plotly_chart(fig, use_container_width=True, config=plotly_config)
-
         insight(
-            "In shootouts, the first 5 kickers have generally higher conversion rates than those after them. " 
-            "Pressure, fatigue and even injuries may impact later kickers."
+            f"Conversion tends to drop in later shootout rounds, possibly due to increased pressure or fatigue. "
         )
 
-    st.markdown("### 📈 Experience vs Penalty Volume")
-    ps = (
-        df.groupby("player_name")
-        .agg(attempts=("outcome", "size"), Caps=("Caps", "first"),
-             goals=("is_goal", "sum"), position=("position", "first"))
+
+def tab_network(df: pd.DataFrame):
+    st.subheader("Penalty Taker ↔ Goalkeeper Network")
+
+    wc_gk_names = get_wc_gk_names()
+
+    net_df = df.dropna(subset=["gk_name", "player_name"]).copy()
+    net_df = net_df[net_df["gk_name"].str.strip().isin(wc_gk_names)]
+
+    total_with_gk = int(df["gk_name"].notna().sum())
+    wc_count = len(net_df)
+    gk_matched = net_df["gk_name"].nunique()
+    st.caption(
+        f" Showing only goalkeepers from the **WC 2026 squads** "
+        f"({gk_matched} GKs matched). "
+        f"**{wc_count:,}** rows out of {total_with_gk:,} with GK data "
+        f"({len(df):,} total in view)."
+    )
+
+    if net_df.empty:
+        st.warning("No WC 2026 squad goalkeeper data available for current filters.")
+        return
+    top_n = st.slider(
+        "Show top N most-connected takers & GKs",
+        5, 50, 15, key="net_top_n",
+    )
+
+    edges = (
+        net_df.groupby(["player_name", "gk_name"])
+        .agg(
+            encounters=("outcome", "size"),
+            goals=("is_goal", "sum"),
+        )
         .reset_index()
     )
-    ps["conversion"] = (ps["goals"] / ps["attempts"] * 100).round(1)
+    edges["conversion"] = (edges["goals"] / edges["encounters"] * 100).round(1)
 
-    fig = px.scatter(
-        ps, x="Caps", y="attempts", color="position",
-        size="goals", opacity=0.7, template="plotly_dark",
-        color_discrete_map={"D": "#38bdf8", "F": "#16a34a", "G": "#f59e0b", "M": "#818cf8"},
-        hover_data=["player_name", "conversion"],
-        labels={"Caps": "International Caps", "attempts": "Penalty Attempts"},
+    taker_counts = edges.groupby("player_name")["encounters"].sum().nlargest(top_n)
+    gk_counts = edges.groupby("gk_name")["encounters"].sum().nlargest(top_n)
+    edges_filt = edges[
+        edges["player_name"].isin(taker_counts.index)
+        | edges["gk_name"].isin(gk_counts.index)
+    ]
+
+    if edges_filt.empty:
+        st.warning("Not enough data to build a network with current filters.")
+        return
+
+
+    G = nx.Graph()
+
+    taker_stats = (
+        net_df[net_df["player_name"].isin(edges_filt["player_name"].unique())]
+        .groupby("player_name")["is_goal"]
+        .agg(attempts="count", goals="sum")
+        .reset_index()
     )
-    fig.update_layout(margin=dict(t=10))
+    taker_stats["conversion"] = (taker_stats["goals"] / taker_stats["attempts"] * 100).round(1)
+    for _, r in taker_stats.iterrows():
+        G.add_node(
+            r["player_name"],
+            bipartite=0,
+            node_type="taker",
+            attempts=r["attempts"],
+            conversion=r["conversion"],
+        )
+
+   
+    gk_stats = (
+        net_df[net_df["gk_name"].isin(edges_filt["gk_name"].unique())]
+        .groupby("gk_name")["is_goal"]
+        .agg(faced="count", conceded="sum")
+        .reset_index()
+    )
+    gk_stats["save_rate"] = ((1 - gk_stats["conceded"] / gk_stats["faced"]) * 100).round(1)
+    for _, r in gk_stats.iterrows():
+        G.add_node(
+            r["gk_name"],
+            bipartite=1,
+            node_type="gk",
+            faced=r["faced"],
+            save_rate=r["save_rate"],
+        )
+
+
+    for _, r in edges_filt.iterrows():
+        if G.has_node(r["player_name"]) and G.has_node(r["gk_name"]):
+            G.add_edge(
+                r["player_name"], r["gk_name"],
+                weight=r["encounters"],
+                goals=r["goals"],
+                conversion=r["conversion"],
+            )
+
+    if G.number_of_edges() == 0:
+        st.warning("No edges in the network for current selection.")
+        return
+
+    pos = nx.spring_layout(G, k=1.8, seed=42, iterations=50)
+
+    edge_x, edge_y = [], []
+    for u, v in G.edges():
+        x0, y0 = pos[u]
+        x1, y1 = pos[v]
+        edge_x += [x0, x1, None]
+        edge_y += [y0, y1, None]
+
+    edge_trace = go.Scatter(
+        x=edge_x, y=edge_y,
+        line=dict(width=0.5, color="rgba(150,150,150,0.3)"),
+        hoverinfo="none", mode="lines",
+        showlegend=False,
+    )
+
+    def make_node_trace(node_type, color_field, cmap_name, symbol, name):
+        nodes = [n for n, d in G.nodes(data=True) if d.get("node_type") == node_type]
+        nx_vals = [pos[n][0] for n in nodes]
+        ny_vals = [pos[n][1] for n in nodes]
+        sizes = []
+        colors = []
+        hover = []
+        for n in nodes:
+            d = G.nodes[n]
+            if node_type == "taker":
+                sizes.append(max(8, min(d.get("attempts", 1) * 3, 40)))
+                colors.append(d.get("conversion", 50))
+                hover.append(
+                    f"<b>{n}</b><br>"
+                    f"Attempts: {d.get('attempts', '?')}<br>"
+                    f"Conversion: {d.get('conversion', '?')}%<br>"
+                    f"Connections: {G.degree(n)}"
+                )
+            else:
+                sizes.append(max(8, min(d.get("faced", 1) * 3, 40)))
+                colors.append(d.get("save_rate", 50))
+                hover.append(
+                    f"<b>{n}</b> (GK)<br>"
+                    f"Faced: {d.get('faced', '?')}<br>"
+                    f"Save rate: {d.get('save_rate', '?')}%<br>"
+                    f"Connections: {G.degree(n)}"
+                )
+        return go.Scatter(
+            x=nx_vals, y=ny_vals, mode="markers+text",
+            marker=dict(
+                size=sizes,
+                color=colors,
+                colorscale=cmap_name,
+                cmin=0, cmax=100,
+                symbol=symbol,
+                line=dict(width=1, color="white"),
+                colorbar=dict(
+                    title=color_field,
+                    x=1.05,
+                    len=0.4,
+                    y=0.75 if node_type == "taker" else 0.25,
+                    yanchor="middle",
+                ),
+            ),
+            text=[n.split()[-1] for n in nodes],  # surname only for readability
+            textposition="top center",
+            textfont=dict(size=8, color="white"),
+            hovertext=hover,
+            hoverinfo="text",
+            name=name,
+        )
+
+    taker_trace = make_node_trace("taker", "Conv %", "Greens", "circle", "Takers")
+    gk_trace = make_node_trace("gk", "Save %", "Blues", "diamond", "Goalkeepers")
+
+    fig = go.Figure(data=[edge_trace, taker_trace, gk_trace])
+    fig.update_layout(
+        template="plotly_dark",
+        showlegend=True,
+        legend=dict(orientation="h", y=-0.05),
+        margin=dict(t=30, b=40, l=20, r=100),
+        xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+        yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+        title="Bipartite Network: Penalty Takers (●) ↔ Goalkeepers (◆)",
+        height=650,
+    )
     st.plotly_chart(fig, use_container_width=True, config=plotly_config)
 
-    if len(ps) > 5:
-        r, p = stats.pearsonr(ps["Caps"].fillna(0), ps["attempts"].fillna(0))
-        insight(
-            f"Pearson r (Caps vs Penalty Attempts) = <b>{r:.3f}</b>, p = {p:.4f}. "
-            + ("Significant positive correlation — experienced players take more penalties."
-               if p < 0.05 else "Weak or no significant correlation between experience and attempts.")
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Nodes", G.number_of_nodes())
+    c2.metric("Edges", G.number_of_edges())
+    avg_deg = sum(dict(G.degree()).values()) / G.number_of_nodes() if G.number_of_nodes() else 0
+    c3.metric("Avg Degree", f"{avg_deg:.1f}")
+    components = nx.number_connected_components(G)
+    c4.metric("Components", components)
+
+
+    with st.expander("Degree Distribution Analysis"):
+        degrees = [d for _, d in G.degree()]
+        fig_deg = px.histogram(
+            x=degrees, nbins=max(5, max(degrees) - min(degrees)),
+            template="plotly_dark",
+            labels={"x": "Degree (connections)", "y": "Count"},
+            color_discrete_sequence=["#818cf8"],
         )
+        fig_deg.update_layout(
+            margin=dict(t=30),
+            title_text="Degree Distribution",
+            bargap=0.1,
+        )
+        st.plotly_chart(fig_deg, use_container_width=True, config=plotly_config)
+
+    with st.expander(" Top Taker ↔ GK Matchups"):
+        top_edges = edges_filt.sort_values("encounters", ascending=False).head(20)
+        st.dataframe(
+            top_edges[["player_name", "gk_name", "encounters", "goals", "conversion"]],
+            hide_index=True, width='stretch',
+        )
+
+
 def main():
     st.image("wc2026.svg", width=200)
     st.markdown(
@@ -644,10 +1045,12 @@ def main():
         return
 
     tabs = st.tabs([
-        "📊 Overview",
-        "🎯 Goal Map",
-        "👤 Players",
-        "🔬 Advanced Insights",
+        "Overview",
+        "Goal Map",
+        "Players",
+        "Distributions",
+        "Advanced Insights",
+        "Network",
     ])
 
     with tabs[0]:
@@ -657,7 +1060,11 @@ def main():
     with tabs[2]:
         tab_players(filtered)
     with tabs[3]:
+        tab_distributions(filtered)
+    with tabs[4]:
         tab_advanced(filtered)
+    with tabs[5]:
+        tab_network(filtered)
 
 
 
