@@ -1,0 +1,2815 @@
+{
+    "incidents": [
+        {
+            "text": "PEN",
+            "homeScore": 4,
+            "awayScore": 3,
+            "isLive": false,
+            "period": "penalties",
+            "time": 999,
+            "addedTime": 999,
+            "timeSeconds": 59940,
+            "reversedPeriodTime": 7,
+            "reversedPeriodTimeSeconds": 360,
+            "periodTimeSeconds": 540,
+            "incidentType": "period"
+        },
+        {
+            "player": {
+                "name": "Gabriel Magalh\u00e3es",
+                "firstName": "Gabriel",
+                "lastName": "Magalh\u00e3es",
+                "slug": "gabriel-magalhaes",
+                "shortName": "G. Magalh\u00e3es",
+                "position": "D",
+                "jerseyNumber": "6",
+                "height": 190,
+                "userCount": 57785,
+                "gender": "M",
+                "sofascoreId": "GabrielMagalh\u00e3es",
+                "id": 869792,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 882489600,
+                "proposedMarketValueRaw": {
+                    "value": 70000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u063a\u0627\u0628\u0631\u064a\u064a\u0644 \u0645\u0627\u063a\u0627\u0644\u0647\u0627\u064a\u0633",
+                        "bn": "\u0997\u09cd\u09af\u09be\u09ac\u09cd\u09b0\u09bf\u09af\u09bc\u09c7\u09b2 \u09ae\u09cd\u09af\u09be\u0997\u09be\u09b2\u09b9\u09be\u09af\u09bc\u09c7\u09b8",
+                        "hi": "\u0917\u0947\u092c\u094d\u0930\u093f\u092f\u0932 \u092e\u0948\u0917\u0932\u0939\u0947\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u063a. \u0645\u0627\u063a\u0627\u0644\u0647\u0627\u064a\u0633",
+                        "bn": "\u0997\u09cd\u09af\u09be\u09ac\u09cd\u09b0\u09bf\u09af\u09bc\u09c7\u09b2",
+                        "hi": "\u0917\u0947\u092c\u094d\u0930\u093f\u092f\u0932 \u092e\u0948\u0917\u0932\u0939\u0947\u0938"
+                    }
+                }
+            },
+            "homeScore": 4,
+            "awayScore": 3,
+            "sequence": 10,
+            "description": "Off target",
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "Gabriel Magalh\u00e3es",
+                        "firstName": "Gabriel",
+                        "lastName": "Magalh\u00e3es",
+                        "slug": "gabriel-magalhaes",
+                        "shortName": "G. Magalh\u00e3es",
+                        "position": "D",
+                        "jerseyNumber": "6",
+                        "height": 190,
+                        "userCount": 57785,
+                        "gender": "M",
+                        "sofascoreId": "GabrielMagalh\u00e3es",
+                        "id": 869792,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 882489600,
+                        "proposedMarketValueRaw": {
+                            "value": 70000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u063a\u0627\u0628\u0631\u064a\u064a\u0644 \u0645\u0627\u063a\u0627\u0644\u0647\u0627\u064a\u0633",
+                                "bn": "\u0997\u09cd\u09af\u09be\u09ac\u09cd\u09b0\u09bf\u09af\u09bc\u09c7\u09b2 \u09ae\u09cd\u09af\u09be\u0997\u09be\u09b2\u09b9\u09be\u09af\u09bc\u09c7\u09b8",
+                                "hi": "\u0917\u0947\u092c\u094d\u0930\u093f\u092f\u0932 \u092e\u0948\u0917\u0932\u0939\u0947\u0938"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u063a. \u0645\u0627\u063a\u0627\u0644\u0647\u0627\u064a\u0633",
+                                "bn": "\u0997\u09cd\u09af\u09be\u09ac\u09cd\u09b0\u09bf\u09af\u09bc\u09c7\u09b2",
+                                "hi": "\u0917\u0947\u092c\u094d\u0930\u093f\u092f\u0932 \u092e\u0948\u0917\u0932\u0939\u0947\u0938"
+                            }
+                        }
+                    },
+                    "eventType": "penalty-miss",
+                    "time": 131,
+                    "playerCoordinates": {
+                        "x": 11.5,
+                        "y": 50
+                    },
+                    "gkCoordinates": {
+                        "x": 0,
+                        "y": 50
+                    },
+                    "goalShotCoordinates": {
+                        "x": 0,
+                        "y": 53.4
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 68.28,
+                        "y": 0
+                    },
+                    "goalkeeper": {
+                        "name": "Matvey Safonov",
+                        "firstName": "Matvey",
+                        "lastName": "Safonov",
+                        "slug": "matvey-safonov",
+                        "shortName": "M. Safonov",
+                        "position": "G",
+                        "jerseyNumber": "39",
+                        "height": 191,
+                        "userCount": 33226,
+                        "gender": "M",
+                        "sofascoreId": "MSafonov",
+                        "id": 800749,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 919900800,
+                        "proposedMarketValueRaw": {
+                            "value": 32000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u062a\u0641\u064a \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u09ae\u09cd\u09af\u09be\u099f\u09ad\u09c7 \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u092e\u093e\u091f\u0935\u0947 \u0938\u092b\u094b\u0928\u094b\u0935"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u098f\u09ae. \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u090f\u092e. \u0938\u092b\u094b\u0928\u094b\u0935"
+                            }
+                        }
+                    },
+                    "isHome": false
+                }
+            ],
+            "id": 118636937,
+            "incidentType": "penaltyShootout",
+            "isHome": false,
+            "incidentClass": "missed",
+            "reason": "offTarget"
+        },
+        {
+            "player": {
+                "name": "Lucas Beraldo",
+                "firstName": "Lucas Beraldo",
+                "slug": "lucas-beraldo",
+                "shortName": "L. Beraldo",
+                "position": "D",
+                "jerseyNumber": "4",
+                "height": 186,
+                "userCount": 20326,
+                "gender": "M",
+                "sofascoreId": "lberaldo",
+                "id": 1108441,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1069632000,
+                "proposedMarketValueRaw": {
+                    "value": 20000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0644\u0648\u0643\u0627\u0633 \u0628\u064a\u0631\u0627\u0644\u062f\u0648",
+                        "bn": "\u09b2\u09c1\u0995\u09be\u09b8 \u09ac\u09c7\u09b0\u09be\u09b2\u09a6\u09cb",
+                        "hi": "\u0932\u0941\u0915\u093e\u0938 \u092c\u0947\u0930\u093e\u0932\u094d\u0921\u094b"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0644. \u0628\u064a\u0631\u0627\u0644\u062f\u0648",
+                        "bn": "\u09b2\u09c1\u0995\u09be\u09b8 \u09ac\u09c7\u09b0\u09be\u09b2\u09a6\u09cb",
+                        "hi": "\u0932\u0941\u0915\u093e\u0938 \u092c\u0947\u0930\u093e\u0932\u094d\u0921\u094b"
+                    }
+                }
+            },
+            "homeScore": 4,
+            "awayScore": 3,
+            "sequence": 9,
+            "description": "Scored",
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "Lucas Beraldo",
+                        "firstName": "Lucas Beraldo",
+                        "slug": "lucas-beraldo",
+                        "shortName": "L. Beraldo",
+                        "position": "D",
+                        "jerseyNumber": "4",
+                        "height": 186,
+                        "userCount": 20326,
+                        "gender": "M",
+                        "sofascoreId": "lberaldo",
+                        "id": 1108441,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 1069632000,
+                        "proposedMarketValueRaw": {
+                            "value": 20000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0644\u0648\u0643\u0627\u0633 \u0628\u064a\u0631\u0627\u0644\u062f\u0648",
+                                "bn": "\u09b2\u09c1\u0995\u09be\u09b8 \u09ac\u09c7\u09b0\u09be\u09b2\u09a6\u09cb",
+                                "hi": "\u0932\u0941\u0915\u093e\u0938 \u092c\u0947\u0930\u093e\u0932\u094d\u0921\u094b"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0644. \u0628\u064a\u0631\u0627\u0644\u062f\u0648",
+                                "bn": "\u09b2\u09c1\u0995\u09be\u09b8 \u09ac\u09c7\u09b0\u09be\u09b2\u09a6\u09cb",
+                                "hi": "\u0932\u0941\u0915\u093e\u0938 \u092c\u0947\u0930\u093e\u0932\u094d\u0921\u094b"
+                            }
+                        }
+                    },
+                    "eventType": "goal",
+                    "bodyPart": "left-foot",
+                    "time": 130,
+                    "playerCoordinates": {
+                        "x": 88.5,
+                        "y": 50
+                    },
+                    "gkCoordinates": {
+                        "x": 99.9,
+                        "y": 50.6
+                    },
+                    "goalShotCoordinates": {
+                        "x": 100,
+                        "y": 45.7
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 73.12,
+                        "y": 83.17
+                    },
+                    "goalkeeper": {
+                        "name": "David Raya",
+                        "firstName": "David",
+                        "lastName": "Raya",
+                        "slug": "david-raya",
+                        "shortName": "D. Raya",
+                        "position": "G",
+                        "jerseyNumber": "1",
+                        "height": 183,
+                        "userCount": 31453,
+                        "gender": "M",
+                        "sofascoreId": "d_raya1",
+                        "id": 581310,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 811123200,
+                        "proposedMarketValueRaw": {
+                            "value": 38000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062f\u064a\u0641\u064a\u062f \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09c7\u09ad\u09bf\u09a1 \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0947\u0935\u093f\u0921 \u0930\u093e\u092f\u093e"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f. \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09bf. \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0940. \u0930\u093e\u092f\u093e"
+                            }
+                        }
+                    },
+                    "isHome": true,
+                    "goalType": "penalty"
+                }
+            ],
+            "id": 118636936,
+            "incidentType": "penaltyShootout",
+            "isHome": true,
+            "incidentClass": "scored",
+            "reason": "scored"
+        },
+        {
+            "player": {
+                "name": "Gabriel Martinelli",
+                "slug": "gabriel-martinelli",
+                "shortName": "G. Martinelli",
+                "position": "F",
+                "jerseyNumber": "11",
+                "height": 180,
+                "userCount": 73497,
+                "gender": "M",
+                "sofascoreId": "GabiMartinelli",
+                "id": 922573,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 992822400,
+                "proposedMarketValueRaw": {
+                    "value": 42000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u063a\u0627\u0628\u0631\u064a\u064a\u0644 \u0645\u0627\u0631\u062a\u064a\u0646\u064a\u0644\u064a",
+                        "bn": "\u0997\u09cd\u09af\u09be\u09ac\u09cd\u09b0\u09bf\u09af\u09bc\u09c7\u09b2 \u09ae\u09be\u09b0\u09cd\u099f\u09bf\u09a8\u09c7\u09b2\u09bf",
+                        "hi": "\u0917\u0947\u092c\u094d\u0930\u093f\u092f\u0932 \u092e\u093e\u0930\u094d\u091f\u093f\u0928\u0947\u0932\u0940"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u063a. \u0645\u0627\u0631\u062a\u064a\u0646\u064a\u0644\u064a",
+                        "bn": "\u099c\u09bf. \u09ae\u09be\u09b0\u09cd\u099f\u09bf\u09a8\u09c7\u09b2\u09bf",
+                        "hi": "\u091c\u0940. \u092e\u093e\u0930\u094d\u091f\u093f\u0928\u0947\u0932\u0940"
+                    }
+                }
+            },
+            "homeScore": 3,
+            "awayScore": 3,
+            "sequence": 8,
+            "description": "Scored",
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "Gabriel Martinelli",
+                        "slug": "gabriel-martinelli",
+                        "shortName": "G. Martinelli",
+                        "position": "F",
+                        "jerseyNumber": "11",
+                        "height": 180,
+                        "userCount": 73497,
+                        "gender": "M",
+                        "sofascoreId": "GabiMartinelli",
+                        "id": 922573,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 992822400,
+                        "proposedMarketValueRaw": {
+                            "value": 42000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u063a\u0627\u0628\u0631\u064a\u064a\u0644 \u0645\u0627\u0631\u062a\u064a\u0646\u064a\u0644\u064a",
+                                "bn": "\u0997\u09cd\u09af\u09be\u09ac\u09cd\u09b0\u09bf\u09af\u09bc\u09c7\u09b2 \u09ae\u09be\u09b0\u09cd\u099f\u09bf\u09a8\u09c7\u09b2\u09bf",
+                                "hi": "\u0917\u0947\u092c\u094d\u0930\u093f\u092f\u0932 \u092e\u093e\u0930\u094d\u091f\u093f\u0928\u0947\u0932\u0940"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u063a. \u0645\u0627\u0631\u062a\u064a\u0646\u064a\u0644\u064a",
+                                "bn": "\u099c\u09bf. \u09ae\u09be\u09b0\u09cd\u099f\u09bf\u09a8\u09c7\u09b2\u09bf",
+                                "hi": "\u091c\u0940. \u092e\u093e\u0930\u094d\u091f\u093f\u0928\u0947\u0932\u0940"
+                            }
+                        }
+                    },
+                    "eventType": "goal",
+                    "bodyPart": "right-foot",
+                    "time": 129,
+                    "playerCoordinates": {
+                        "x": 11.5,
+                        "y": 50
+                    },
+                    "gkCoordinates": {
+                        "x": 0.1,
+                        "y": 50
+                    },
+                    "goalShotCoordinates": {
+                        "x": 0,
+                        "y": 46.3
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 30.11,
+                        "y": 62
+                    },
+                    "goalkeeper": {
+                        "name": "Matvey Safonov",
+                        "firstName": "Matvey",
+                        "lastName": "Safonov",
+                        "slug": "matvey-safonov",
+                        "shortName": "M. Safonov",
+                        "position": "G",
+                        "jerseyNumber": "39",
+                        "height": 191,
+                        "userCount": 33226,
+                        "gender": "M",
+                        "sofascoreId": "MSafonov",
+                        "id": 800749,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 919900800,
+                        "proposedMarketValueRaw": {
+                            "value": 32000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u062a\u0641\u064a \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u09ae\u09cd\u09af\u09be\u099f\u09ad\u09c7 \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u092e\u093e\u091f\u0935\u0947 \u0938\u092b\u094b\u0928\u094b\u0935"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u098f\u09ae. \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u090f\u092e. \u0938\u092b\u094b\u0928\u094b\u0935"
+                            }
+                        }
+                    },
+                    "isHome": false,
+                    "goalType": "penalty"
+                }
+            ],
+            "id": 118636935,
+            "incidentType": "penaltyShootout",
+            "isHome": false,
+            "incidentClass": "scored",
+            "reason": "scored"
+        },
+        {
+            "player": {
+                "name": "Achraf Hakimi",
+                "firstName": "Achraf",
+                "lastName": "Hakimi",
+                "slug": "achraf-hakimi",
+                "shortName": "A. Hakimi",
+                "position": "D",
+                "jerseyNumber": "2",
+                "height": 181,
+                "userCount": 146161,
+                "gender": "M",
+                "sofascoreId": "AHakimi",
+                "id": 814594,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 910137600,
+                "proposedMarketValueRaw": {
+                    "value": 82000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0623\u0634\u0631\u0641 \u062d\u0643\u064a\u0645\u064a",
+                        "bn": "\u09b9\u09be\u0995\u09bf\u09ae\u09bf, \u0986\u099b\u09b0\u09be\u09ab",
+                        "hi": "\u0939\u0915\u0940\u092e\u0940, \u0905\u0936\u0930\u092b"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0623. \u062d\u0643\u064a\u0645\u064a",
+                        "bn": "\u098f. \u09b9\u09be\u0995\u09bf\u09ae\u09bf",
+                        "hi": "\u090f. \u0905\u0936\u0930\u092b"
+                    }
+                }
+            },
+            "homeScore": 3,
+            "awayScore": 2,
+            "sequence": 7,
+            "description": "Scored",
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "Achraf Hakimi",
+                        "firstName": "Achraf",
+                        "lastName": "Hakimi",
+                        "slug": "achraf-hakimi",
+                        "shortName": "A. Hakimi",
+                        "position": "D",
+                        "jerseyNumber": "2",
+                        "height": 181,
+                        "userCount": 146161,
+                        "gender": "M",
+                        "sofascoreId": "AHakimi",
+                        "id": 814594,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 910137600,
+                        "proposedMarketValueRaw": {
+                            "value": 82000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0623\u0634\u0631\u0641 \u062d\u0643\u064a\u0645\u064a",
+                                "bn": "\u09b9\u09be\u0995\u09bf\u09ae\u09bf, \u0986\u099b\u09b0\u09be\u09ab",
+                                "hi": "\u0939\u0915\u0940\u092e\u0940, \u0905\u0936\u0930\u092b"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0623. \u062d\u0643\u064a\u0645\u064a",
+                                "bn": "\u098f. \u09b9\u09be\u0995\u09bf\u09ae\u09bf",
+                                "hi": "\u090f. \u0905\u0936\u0930\u092b"
+                            }
+                        }
+                    },
+                    "eventType": "goal",
+                    "bodyPart": "right-foot",
+                    "time": 128,
+                    "playerCoordinates": {
+                        "x": 88.5,
+                        "y": 50
+                    },
+                    "gkCoordinates": {
+                        "x": 100,
+                        "y": 49.9
+                    },
+                    "goalShotCoordinates": {
+                        "x": 100,
+                        "y": 53.6
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 30.65,
+                        "y": 81
+                    },
+                    "goalkeeper": {
+                        "name": "David Raya",
+                        "firstName": "David",
+                        "lastName": "Raya",
+                        "slug": "david-raya",
+                        "shortName": "D. Raya",
+                        "position": "G",
+                        "jerseyNumber": "1",
+                        "height": 183,
+                        "userCount": 31453,
+                        "gender": "M",
+                        "sofascoreId": "d_raya1",
+                        "id": 581310,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 811123200,
+                        "proposedMarketValueRaw": {
+                            "value": 38000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062f\u064a\u0641\u064a\u062f \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09c7\u09ad\u09bf\u09a1 \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0947\u0935\u093f\u0921 \u0930\u093e\u092f\u093e"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f. \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09bf. \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0940. \u0930\u093e\u092f\u093e"
+                            }
+                        }
+                    },
+                    "isHome": true,
+                    "goalType": "penalty"
+                }
+            ],
+            "id": 118636934,
+            "incidentType": "penaltyShootout",
+            "isHome": true,
+            "incidentClass": "scored",
+            "reason": "scored"
+        },
+        {
+            "player": {
+                "name": "Declan Rice",
+                "firstName": "Declan",
+                "lastName": "Rice",
+                "slug": "declan-rice",
+                "shortName": "D. Rice",
+                "position": "M",
+                "jerseyNumber": "41",
+                "height": 188,
+                "userCount": 74007,
+                "gender": "M",
+                "sofascoreId": "DeclanRice",
+                "id": 856714,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 916272000,
+                "proposedMarketValueRaw": {
+                    "value": 114000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u062f\u064a\u0643\u0644\u0627\u0646 \u0631\u0627\u064a\u0633",
+                        "bn": "\u09a1\u09c7\u0995\u09cd\u09b2\u09be\u09a8 \u09b0\u09be\u0987\u09b8",
+                        "hi": "\u0921\u0947\u0915\u094d\u0932\u093e\u0928 \u0930\u093e\u0907\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u062f. \u0631\u0627\u064a\u0633",
+                        "bn": "\u09a1\u09bf. \u09b0\u09be\u0987\u09b8",
+                        "hi": "\u0921\u0940. \u0930\u093e\u0907\u0938"
+                    }
+                }
+            },
+            "homeScore": 2,
+            "awayScore": 2,
+            "sequence": 6,
+            "description": "Scored",
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "Declan Rice",
+                        "firstName": "Declan",
+                        "lastName": "Rice",
+                        "slug": "declan-rice",
+                        "shortName": "D. Rice",
+                        "position": "M",
+                        "jerseyNumber": "41",
+                        "height": 188,
+                        "userCount": 74007,
+                        "gender": "M",
+                        "sofascoreId": "DeclanRice",
+                        "id": 856714,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 916272000,
+                        "proposedMarketValueRaw": {
+                            "value": 114000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062f\u064a\u0643\u0644\u0627\u0646 \u0631\u0627\u064a\u0633",
+                                "bn": "\u09a1\u09c7\u0995\u09cd\u09b2\u09be\u09a8 \u09b0\u09be\u0987\u09b8",
+                                "hi": "\u0921\u0947\u0915\u094d\u0932\u093e\u0928 \u0930\u093e\u0907\u0938"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f. \u0631\u0627\u064a\u0633",
+                                "bn": "\u09a1\u09bf. \u09b0\u09be\u0987\u09b8",
+                                "hi": "\u0921\u0940. \u0930\u093e\u0907\u0938"
+                            }
+                        }
+                    },
+                    "eventType": "goal",
+                    "bodyPart": "right-foot",
+                    "time": 127,
+                    "playerCoordinates": {
+                        "x": 11.5,
+                        "y": 50
+                    },
+                    "gkCoordinates": {
+                        "x": 0.1,
+                        "y": 50
+                    },
+                    "goalShotCoordinates": {
+                        "x": 0,
+                        "y": 52.6
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 63.98,
+                        "y": 96.83
+                    },
+                    "goalkeeper": {
+                        "name": "Matvey Safonov",
+                        "firstName": "Matvey",
+                        "lastName": "Safonov",
+                        "slug": "matvey-safonov",
+                        "shortName": "M. Safonov",
+                        "position": "G",
+                        "jerseyNumber": "39",
+                        "height": 191,
+                        "userCount": 33226,
+                        "gender": "M",
+                        "sofascoreId": "MSafonov",
+                        "id": 800749,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 919900800,
+                        "proposedMarketValueRaw": {
+                            "value": 32000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u062a\u0641\u064a \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u09ae\u09cd\u09af\u09be\u099f\u09ad\u09c7 \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u092e\u093e\u091f\u0935\u0947 \u0938\u092b\u094b\u0928\u094b\u0935"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u098f\u09ae. \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u090f\u092e. \u0938\u092b\u094b\u0928\u094b\u0935"
+                            }
+                        }
+                    },
+                    "isHome": false,
+                    "goalType": "penalty"
+                }
+            ],
+            "id": 118636933,
+            "incidentType": "penaltyShootout",
+            "isHome": false,
+            "incidentClass": "scored",
+            "reason": "scored"
+        },
+        {
+            "player": {
+                "name": "Nuno Mendes",
+                "slug": "nuno-mendes",
+                "shortName": "N. Mendes",
+                "position": "D",
+                "jerseyNumber": "25",
+                "height": 180,
+                "userCount": 45752,
+                "gender": "M",
+                "sofascoreId": "nunomendes_5",
+                "id": 989768,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1024444800,
+                "proposedMarketValueRaw": {
+                    "value": 77000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0646\u0648\u0646\u0648 \u0645\u064a\u0646\u062f\u064a\u0634",
+                        "bn": "\u09a8\u09c1\u09a8\u09cb \u09ae\u09c7\u09a8\u09cd\u09a1\u09c7\u09b8",
+                        "hi": "\u0928\u0942\u0928\u094b \u092e\u0947\u0902\u0921\u0947\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0646. \u0645\u064a\u0646\u062f\u064a\u0634",
+                        "bn": "\u098f\u09a8. \u09ae\u09c7\u09a8\u09cd\u09a1\u09c7\u09b8",
+                        "hi": "\u090f\u0928. \u092e\u0947\u0902\u0921\u0947\u0938"
+                    }
+                }
+            },
+            "homeScore": 2,
+            "awayScore": 1,
+            "sequence": 5,
+            "description": "Goalkeeper save",
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "Nuno Mendes",
+                        "slug": "nuno-mendes",
+                        "shortName": "N. Mendes",
+                        "position": "D",
+                        "jerseyNumber": "25",
+                        "height": 180,
+                        "userCount": 45752,
+                        "gender": "M",
+                        "sofascoreId": "nunomendes_5",
+                        "id": 989768,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 1024444800,
+                        "proposedMarketValueRaw": {
+                            "value": 77000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0646\u0648\u0646\u0648 \u0645\u064a\u0646\u062f\u064a\u0634",
+                                "bn": "\u09a8\u09c1\u09a8\u09cb \u09ae\u09c7\u09a8\u09cd\u09a1\u09c7\u09b8",
+                                "hi": "\u0928\u0942\u0928\u094b \u092e\u0947\u0902\u0921\u0947\u0938"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0646. \u0645\u064a\u0646\u062f\u064a\u0634",
+                                "bn": "\u098f\u09a8. \u09ae\u09c7\u09a8\u09cd\u09a1\u09c7\u09b8",
+                                "hi": "\u090f\u0928. \u092e\u0947\u0902\u0921\u0947\u0938"
+                            }
+                        }
+                    },
+                    "eventType": "penalty-save",
+                    "time": 126,
+                    "playerCoordinates": {
+                        "x": 88.5,
+                        "y": 50
+                    },
+                    "goalShotCoordinates": {
+                        "x": 100,
+                        "y": 47.2
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 65.05,
+                        "y": 74.67
+                    },
+                    "goalkeeper": {
+                        "name": "David Raya",
+                        "firstName": "David",
+                        "lastName": "Raya",
+                        "slug": "david-raya",
+                        "shortName": "D. Raya",
+                        "position": "G",
+                        "jerseyNumber": "1",
+                        "height": 183,
+                        "userCount": 31453,
+                        "gender": "M",
+                        "sofascoreId": "d_raya1",
+                        "id": 581310,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 811123200,
+                        "proposedMarketValueRaw": {
+                            "value": 38000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062f\u064a\u0641\u064a\u062f \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09c7\u09ad\u09bf\u09a1 \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0947\u0935\u093f\u0921 \u0930\u093e\u092f\u093e"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f. \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09bf. \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0940. \u0930\u093e\u092f\u093e"
+                            }
+                        }
+                    },
+                    "isHome": true
+                }
+            ],
+            "id": 118636932,
+            "incidentType": "penaltyShootout",
+            "isHome": true,
+            "incidentClass": "missed",
+            "reason": "goalkeeperSave"
+        },
+        {
+            "player": {
+                "name": "Eberechi Eze",
+                "firstName": "Eberechi",
+                "lastName": "Eze",
+                "slug": "eberechi-eze",
+                "shortName": "E. Eze",
+                "position": "M",
+                "jerseyNumber": "10",
+                "height": 178,
+                "userCount": 64095,
+                "gender": "M",
+                "sofascoreId": "eze",
+                "id": 864921,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 899078400,
+                "proposedMarketValueRaw": {
+                    "value": 63000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0625\u064a\u0628\u064a\u0631\u064a\u0634\u064a \u0625\u064a\u0632\u064a",
+                        "bn": "\u0987\u09ac\u09c7\u09b0\u09c7\u099a\u09bf \u098f\u099c",
+                        "hi": "\u090f\u092c\u0947\u0930\u091a\u0940 \u0908\u091c\u093c\u0947"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0625. \u0625\u064a\u0632\u064a",
+                        "bn": "\u0987. \u098f\u099c",
+                        "hi": "\u0908. \u0908\u091c\u093c\u0947"
+                    }
+                }
+            },
+            "homeScore": 2,
+            "awayScore": 1,
+            "sequence": 4,
+            "description": "Off target",
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "Eberechi Eze",
+                        "firstName": "Eberechi",
+                        "lastName": "Eze",
+                        "slug": "eberechi-eze",
+                        "shortName": "E. Eze",
+                        "position": "M",
+                        "jerseyNumber": "10",
+                        "height": 178,
+                        "userCount": 64095,
+                        "gender": "M",
+                        "sofascoreId": "eze",
+                        "id": 864921,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 899078400,
+                        "proposedMarketValueRaw": {
+                            "value": 63000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0625\u064a\u0628\u064a\u0631\u064a\u0634\u064a \u0625\u064a\u0632\u064a",
+                                "bn": "\u0987\u09ac\u09c7\u09b0\u09c7\u099a\u09bf \u098f\u099c",
+                                "hi": "\u090f\u092c\u0947\u0930\u091a\u0940 \u0908\u091c\u093c\u0947"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0625. \u0625\u064a\u0632\u064a",
+                                "bn": "\u0987. \u098f\u099c",
+                                "hi": "\u0908. \u0908\u091c\u093c\u0947"
+                            }
+                        }
+                    },
+                    "eventType": "penalty-miss",
+                    "time": 125,
+                    "playerCoordinates": {
+                        "x": 11.5,
+                        "y": 50
+                    },
+                    "gkCoordinates": {
+                        "x": 0.1,
+                        "y": 49.9
+                    },
+                    "goalShotCoordinates": {
+                        "x": 0,
+                        "y": 43.2
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 13.44,
+                        "y": 83.83
+                    },
+                    "goalkeeper": {
+                        "name": "Matvey Safonov",
+                        "firstName": "Matvey",
+                        "lastName": "Safonov",
+                        "slug": "matvey-safonov",
+                        "shortName": "M. Safonov",
+                        "position": "G",
+                        "jerseyNumber": "39",
+                        "height": 191,
+                        "userCount": 33226,
+                        "gender": "M",
+                        "sofascoreId": "MSafonov",
+                        "id": 800749,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 919900800,
+                        "proposedMarketValueRaw": {
+                            "value": 32000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u062a\u0641\u064a \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u09ae\u09cd\u09af\u09be\u099f\u09ad\u09c7 \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u092e\u093e\u091f\u0935\u0947 \u0938\u092b\u094b\u0928\u094b\u0935"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u098f\u09ae. \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u090f\u092e. \u0938\u092b\u094b\u0928\u094b\u0935"
+                            }
+                        }
+                    },
+                    "isHome": false
+                }
+            ],
+            "id": 118636931,
+            "incidentType": "penaltyShootout",
+            "isHome": false,
+            "incidentClass": "missed",
+            "reason": "offTarget"
+        },
+        {
+            "player": {
+                "name": "D\u00e9sir\u00e9 Dou\u00e9",
+                "firstName": "D\u00e9sir\u00e9 Dou\u00e9",
+                "lastName": "",
+                "slug": "desire-doue",
+                "shortName": "D. Dou\u00e9",
+                "position": "F",
+                "jerseyNumber": "14",
+                "height": 181,
+                "userCount": 106707,
+                "gender": "M",
+                "sofascoreId": "DD14",
+                "id": 1154605,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1117756800,
+                "proposedMarketValueRaw": {
+                    "value": 124000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u062f\u064a\u0632\u064a\u0631\u064a \u062f\u0648\u064a\u0647",
+                        "bn": "\u09a1\u09bf\u099c\u09be\u09df\u09be\u09b0 \u09a1\u09c1\u09af\u09bc\u09c7",
+                        "hi": "\u0921\u0947\u0938\u093f\u0930\u0947 \u0921\u094c\u090f"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u062f\u064a\u0632\u064a\u0631\u064a \u062f\u0648\u064a\u0647",
+                        "bn": "\u09a1\u09bf. \u09a1\u09c1\u09af\u09bc\u09c7",
+                        "hi": "\u0921\u0940. \u0921\u094c\u090f"
+                    }
+                }
+            },
+            "homeScore": 2,
+            "awayScore": 1,
+            "sequence": 3,
+            "description": "Scored",
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "D\u00e9sir\u00e9 Dou\u00e9",
+                        "firstName": "D\u00e9sir\u00e9 Dou\u00e9",
+                        "lastName": "",
+                        "slug": "desire-doue",
+                        "shortName": "D. Dou\u00e9",
+                        "position": "F",
+                        "jerseyNumber": "14",
+                        "height": 181,
+                        "userCount": 106707,
+                        "gender": "M",
+                        "sofascoreId": "DD14",
+                        "id": 1154605,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 1117756800,
+                        "proposedMarketValueRaw": {
+                            "value": 124000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062f\u064a\u0632\u064a\u0631\u064a \u062f\u0648\u064a\u0647",
+                                "bn": "\u09a1\u09bf\u099c\u09be\u09df\u09be\u09b0 \u09a1\u09c1\u09af\u09bc\u09c7",
+                                "hi": "\u0921\u0947\u0938\u093f\u0930\u0947 \u0921\u094c\u090f"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f\u064a\u0632\u064a\u0631\u064a \u062f\u0648\u064a\u0647",
+                                "bn": "\u09a1\u09bf. \u09a1\u09c1\u09af\u09bc\u09c7",
+                                "hi": "\u0921\u0940. \u0921\u094c\u090f"
+                            }
+                        }
+                    },
+                    "eventType": "goal",
+                    "bodyPart": "right-foot",
+                    "time": 124,
+                    "playerCoordinates": {
+                        "x": 88.5,
+                        "y": 50
+                    },
+                    "gkCoordinates": {
+                        "x": 99.9,
+                        "y": 50
+                    },
+                    "goalShotCoordinates": {
+                        "x": 100,
+                        "y": 47
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 66.13,
+                        "y": 95.83
+                    },
+                    "goalkeeper": {
+                        "name": "David Raya",
+                        "firstName": "David",
+                        "lastName": "Raya",
+                        "slug": "david-raya",
+                        "shortName": "D. Raya",
+                        "position": "G",
+                        "jerseyNumber": "1",
+                        "height": 183,
+                        "userCount": 31453,
+                        "gender": "M",
+                        "sofascoreId": "d_raya1",
+                        "id": 581310,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 811123200,
+                        "proposedMarketValueRaw": {
+                            "value": 38000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062f\u064a\u0641\u064a\u062f \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09c7\u09ad\u09bf\u09a1 \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0947\u0935\u093f\u0921 \u0930\u093e\u092f\u093e"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f. \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09bf. \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0940. \u0930\u093e\u092f\u093e"
+                            }
+                        }
+                    },
+                    "isHome": true,
+                    "goalType": "penalty"
+                }
+            ],
+            "id": 118636930,
+            "incidentType": "penaltyShootout",
+            "isHome": true,
+            "incidentClass": "scored",
+            "reason": "scored"
+        },
+        {
+            "player": {
+                "name": "Viktor Gy\u00f6keres",
+                "firstName": "Viktor",
+                "lastName": "Gyokeres",
+                "slug": "viktor-gyokeres",
+                "shortName": "V. Gy\u00f6keres",
+                "position": "F",
+                "jerseyNumber": "14",
+                "height": 187,
+                "userCount": 221497,
+                "gender": "M",
+                "sofascoreId": "VGy\u00f6keres",
+                "id": 804508,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 896918400,
+                "proposedMarketValueRaw": {
+                    "value": 61000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0641\u064a\u0643\u062a\u0648\u0631 \u063a\u064a\u0648\u0643\u064a\u0631\u064a\u0633",
+                        "bn": "\u09ad\u09bf\u0995\u09cd\u099f\u09b0 \u0997\u09cb\u0995\u09c7\u09b0\u09c7\u09b8",
+                        "hi": "\u0935\u093f\u0915\u094d\u091f\u0930 \u0917\u094d\u092f\u094b\u0915\u0947\u0930\u0947\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0641. \u063a\u064a\u0648\u0643\u064a\u0631\u064a\u0633",
+                        "bn": "\u09ad\u09bf. \u0997\u09cb\u0995\u09c7\u09b0\u09c7\u09b8",
+                        "hi": "\u0935\u0940. \u0917\u094d\u092f\u094b\u0915\u0947\u0930\u0947\u0938"
+                    }
+                }
+            },
+            "homeScore": 1,
+            "awayScore": 1,
+            "sequence": 2,
+            "description": "Scored",
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "Viktor Gy\u00f6keres",
+                        "firstName": "Viktor",
+                        "lastName": "Gyokeres",
+                        "slug": "viktor-gyokeres",
+                        "shortName": "V. Gy\u00f6keres",
+                        "position": "F",
+                        "jerseyNumber": "14",
+                        "height": 187,
+                        "userCount": 221497,
+                        "gender": "M",
+                        "sofascoreId": "VGy\u00f6keres",
+                        "id": 804508,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 896918400,
+                        "proposedMarketValueRaw": {
+                            "value": 61000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0641\u064a\u0643\u062a\u0648\u0631 \u063a\u064a\u0648\u0643\u064a\u0631\u064a\u0633",
+                                "bn": "\u09ad\u09bf\u0995\u09cd\u099f\u09b0 \u0997\u09cb\u0995\u09c7\u09b0\u09c7\u09b8",
+                                "hi": "\u0935\u093f\u0915\u094d\u091f\u0930 \u0917\u094d\u092f\u094b\u0915\u0947\u0930\u0947\u0938"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0641. \u063a\u064a\u0648\u0643\u064a\u0631\u064a\u0633",
+                                "bn": "\u09ad\u09bf. \u0997\u09cb\u0995\u09c7\u09b0\u09c7\u09b8",
+                                "hi": "\u0935\u0940. \u0917\u094d\u092f\u094b\u0915\u0947\u0930\u0947\u0938"
+                            }
+                        }
+                    },
+                    "eventType": "goal",
+                    "bodyPart": "right-foot",
+                    "time": 123,
+                    "playerCoordinates": {
+                        "x": 11.5,
+                        "y": 50
+                    },
+                    "gkCoordinates": {
+                        "x": 0,
+                        "y": 49.6
+                    },
+                    "goalShotCoordinates": {
+                        "x": 0,
+                        "y": 52.9
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 65.59,
+                        "y": 97.83
+                    },
+                    "goalkeeper": {
+                        "name": "Matvey Safonov",
+                        "firstName": "Matvey",
+                        "lastName": "Safonov",
+                        "slug": "matvey-safonov",
+                        "shortName": "M. Safonov",
+                        "position": "G",
+                        "jerseyNumber": "39",
+                        "height": 191,
+                        "userCount": 33226,
+                        "gender": "M",
+                        "sofascoreId": "MSafonov",
+                        "id": 800749,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 919900800,
+                        "proposedMarketValueRaw": {
+                            "value": 32000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u062a\u0641\u064a \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u09ae\u09cd\u09af\u09be\u099f\u09ad\u09c7 \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u092e\u093e\u091f\u0935\u0947 \u0938\u092b\u094b\u0928\u094b\u0935"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u098f\u09ae. \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u090f\u092e. \u0938\u092b\u094b\u0928\u094b\u0935"
+                            }
+                        }
+                    },
+                    "isHome": false,
+                    "goalType": "penalty"
+                }
+            ],
+            "id": 118636929,
+            "incidentType": "penaltyShootout",
+            "isHome": false,
+            "incidentClass": "scored",
+            "reason": "scored"
+        },
+        {
+            "player": {
+                "name": "Gon\u00e7alo Ramos",
+                "firstName": "Goncalo",
+                "lastName": "Ramos",
+                "slug": "goncalo-ramos",
+                "shortName": "G. Ramos",
+                "position": "F",
+                "jerseyNumber": "9",
+                "height": 185,
+                "userCount": 25989,
+                "gender": "M",
+                "sofascoreId": "goncaloramos88",
+                "id": 934510,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 992995200,
+                "proposedMarketValueRaw": {
+                    "value": 32000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u063a\u0648\u0646\u0633\u0627\u0644\u0648 \u0631\u0627\u0645\u0648\u0633",
+                        "bn": "\u0997\u09a8\u09b8\u09be\u09b2\u09cb \u09b0\u09be\u09ae\u09cb\u09b8",
+                        "hi": "\u0917\u094b\u0902\u0938\u093e\u0932\u094b \u0930\u093e\u092e\u094b\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u063a. \u0631\u0627\u0645\u0648\u0633",
+                        "bn": "\u099c\u09bf. \u09b0\u09be\u09ae\u09cb\u09b8",
+                        "hi": "\u091c\u0940. \u0930\u093e\u092e\u094b\u0938"
+                    }
+                }
+            },
+            "homeScore": 1,
+            "awayScore": 0,
+            "sequence": 1,
+            "description": "Scored",
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "Gon\u00e7alo Ramos",
+                        "firstName": "Goncalo",
+                        "lastName": "Ramos",
+                        "slug": "goncalo-ramos",
+                        "shortName": "G. Ramos",
+                        "position": "F",
+                        "jerseyNumber": "9",
+                        "height": 185,
+                        "userCount": 25989,
+                        "gender": "M",
+                        "sofascoreId": "goncaloramos88",
+                        "id": 934510,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 992995200,
+                        "proposedMarketValueRaw": {
+                            "value": 32000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u063a\u0648\u0646\u0633\u0627\u0644\u0648 \u0631\u0627\u0645\u0648\u0633",
+                                "bn": "\u0997\u09a8\u09b8\u09be\u09b2\u09cb \u09b0\u09be\u09ae\u09cb\u09b8",
+                                "hi": "\u0917\u094b\u0902\u0938\u093e\u0932\u094b \u0930\u093e\u092e\u094b\u0938"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u063a. \u0631\u0627\u0645\u0648\u0633",
+                                "bn": "\u099c\u09bf. \u09b0\u09be\u09ae\u09cb\u09b8",
+                                "hi": "\u091c\u0940. \u0930\u093e\u092e\u094b\u0938"
+                            }
+                        }
+                    },
+                    "eventType": "goal",
+                    "bodyPart": "right-foot",
+                    "time": 122,
+                    "playerCoordinates": {
+                        "x": 88.5,
+                        "y": 50
+                    },
+                    "gkCoordinates": {
+                        "x": 99.9,
+                        "y": 50.6
+                    },
+                    "goalShotCoordinates": {
+                        "x": 100,
+                        "y": 46.2
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 70.43,
+                        "y": 51.5
+                    },
+                    "goalkeeper": {
+                        "name": "David Raya",
+                        "firstName": "David",
+                        "lastName": "Raya",
+                        "slug": "david-raya",
+                        "shortName": "D. Raya",
+                        "position": "G",
+                        "jerseyNumber": "1",
+                        "height": 183,
+                        "userCount": 31453,
+                        "gender": "M",
+                        "sofascoreId": "d_raya1",
+                        "id": 581310,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 811123200,
+                        "proposedMarketValueRaw": {
+                            "value": 38000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062f\u064a\u0641\u064a\u062f \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09c7\u09ad\u09bf\u09a1 \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0947\u0935\u093f\u0921 \u0930\u093e\u092f\u093e"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f. \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09bf. \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0940. \u0930\u093e\u092f\u093e"
+                            }
+                        }
+                    },
+                    "isHome": true,
+                    "goalType": "penalty"
+                }
+            ],
+            "id": 118636928,
+            "incidentType": "penaltyShootout",
+            "isHome": true,
+            "incidentClass": "scored",
+            "reason": "scored"
+        },
+        {
+            "text": "ET",
+            "homeScore": 1,
+            "awayScore": 1,
+            "isLive": false,
+            "time": 120,
+            "addedTime": 999,
+            "timeSeconds": 7200,
+            "reversedPeriodTime": 1,
+            "reversedPeriodTimeSeconds": 0,
+            "periodTimeSeconds": 900,
+            "incidentType": "period"
+        },
+        {
+            "player": {
+                "name": "Nuno Mendes",
+                "slug": "nuno-mendes",
+                "shortName": "N. Mendes",
+                "position": "D",
+                "jerseyNumber": "25",
+                "height": 180,
+                "userCount": 45752,
+                "gender": "M",
+                "sofascoreId": "nunomendes_5",
+                "id": 989768,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1024444800,
+                "proposedMarketValueRaw": {
+                    "value": 77000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0646\u0648\u0646\u0648 \u0645\u064a\u0646\u062f\u064a\u0634",
+                        "bn": "\u09a8\u09c1\u09a8\u09cb \u09ae\u09c7\u09a8\u09cd\u09a1\u09c7\u09b8",
+                        "hi": "\u0928\u0942\u0928\u094b \u092e\u0947\u0902\u0921\u0947\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0646. \u0645\u064a\u0646\u062f\u064a\u0634",
+                        "bn": "\u098f\u09a8. \u09ae\u09c7\u09a8\u09cd\u09a1\u09c7\u09b8",
+                        "hi": "\u090f\u0928. \u092e\u0947\u0902\u0921\u0947\u0938"
+                    }
+                }
+            },
+            "playerName": "Nuno Mendes",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 125248109,
+            "time": 118,
+            "isHome": true,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 3,
+            "incidentType": "card"
+        },
+        {
+            "playerIn": {
+                "name": "Ilya Zabarnyi",
+                "slug": "illia-zabarnyi",
+                "shortName": "I. Zabarnyi",
+                "position": "D",
+                "jerseyNumber": "6",
+                "height": 189,
+                "userCount": 18675,
+                "gender": "M",
+                "sofascoreId": "IlliaZabarnyi",
+                "id": 1023567,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1030838400,
+                "proposedMarketValueRaw": {
+                    "value": 37000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0625\u064a\u0644\u064a\u0627 \u0632\u0627\u0628\u0627\u0631\u0646\u064a",
+                        "bn": "\u0987\u09b2\u09bf\u09af\u09bc\u09be \u099c\u09be\u09ac\u09be\u09b0\u09a8\u09bf",
+                        "hi": "\u0907\u0932\u093f\u092f\u093e \u091c\u093c\u092c\u0930\u0928\u092f\u0940"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0625. \u0632\u0627\u0628\u0627\u0631\u0646\u064a",
+                        "bn": "\u0986\u0987. \u099c\u09be\u09ac\u09be\u09b0\u09a8\u09bf",
+                        "hi": "\u0906\u0908. \u091c\u093c\u092c\u0930\u0928\u092f\u0940"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Marquinhos",
+                "firstName": "Marcos",
+                "lastName": "Marquinhos",
+                "slug": "marquinhos",
+                "shortName": "Marquinhos",
+                "position": "D",
+                "jerseyNumber": "5",
+                "height": 183,
+                "userCount": 41455,
+                "gender": "M",
+                "sofascoreId": "marquinhosm5",
+                "id": 155995,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 768873600,
+                "proposedMarketValueRaw": {
+                    "value": 29000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0645\u0627\u0631\u0643\u064a\u0646\u064a\u0648\u0633",
+                        "bn": "\u09ae\u09be\u09b0\u0995\u09c1\u0987\u09a8\u09b9\u09cb\u09b8",
+                        "hi": "\u092e\u093e\u0930\u094d\u0915\u094d\u0935\u093f\u0928\u094d\u0939\u094b\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0645\u0627\u0631\u0643\u064a\u0646\u064a\u0648\u0633",
+                        "bn": "\u09ae\u09be\u09b0\u0995\u09c1\u0987\u09a8\u09b9\u09cb\u09b8",
+                        "hi": "\u092e\u093e\u0930\u094d\u0915\u094d\u0935\u093f\u0928\u094d\u0939\u094b\u0938"
+                    }
+                }
+            },
+            "id": 126339925,
+            "time": 106,
+            "injury": false,
+            "isHome": true,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 15,
+            "incidentType": "substitution"
+        },
+        {
+            "playerIn": {
+                "name": "Lucas Beraldo",
+                "firstName": "Lucas Beraldo",
+                "slug": "lucas-beraldo",
+                "shortName": "L. Beraldo",
+                "position": "D",
+                "jerseyNumber": "4",
+                "height": 186,
+                "userCount": 20326,
+                "gender": "M",
+                "sofascoreId": "lberaldo",
+                "id": 1108441,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1069632000,
+                "proposedMarketValueRaw": {
+                    "value": 20000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0644\u0648\u0643\u0627\u0633 \u0628\u064a\u0631\u0627\u0644\u062f\u0648",
+                        "bn": "\u09b2\u09c1\u0995\u09be\u09b8 \u09ac\u09c7\u09b0\u09be\u09b2\u09a6\u09cb",
+                        "hi": "\u0932\u0941\u0915\u093e\u0938 \u092c\u0947\u0930\u093e\u0932\u094d\u0921\u094b"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0644. \u0628\u064a\u0631\u0627\u0644\u062f\u0648",
+                        "bn": "\u09b2\u09c1\u0995\u09be\u09b8 \u09ac\u09c7\u09b0\u09be\u09b2\u09a6\u09cb",
+                        "hi": "\u0932\u0941\u0915\u093e\u0938 \u092c\u0947\u0930\u093e\u0932\u094d\u0921\u094b"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Vitinha",
+                "firstName": "Vitor",
+                "lastName": "Vitinha",
+                "slug": "vitinha",
+                "shortName": "Vitinha",
+                "position": "M",
+                "jerseyNumber": "17",
+                "height": 172,
+                "userCount": 66431,
+                "gender": "M",
+                "sofascoreId": "vitinha",
+                "id": 902029,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 950400000,
+                "proposedMarketValueRaw": {
+                    "value": 102000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0641\u064a\u062a\u064a\u0646\u064a\u0627",
+                        "bn": "\u09ac\u09bf\u09a4\u09bf\u09a8\u09b9\u09be",
+                        "hi": "\u0935\u093f\u0924\u093f\u0928\u094d\u0939\u093e"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0641\u064a\u062a\u064a\u0646\u064a\u0627",
+                        "bn": "\u09ac\u09bf\u09a4\u09bf\u09a8\u09b9\u09be",
+                        "hi": "\u0935\u093f\u0924\u093f\u0928\u094d\u0939\u093e"
+                    }
+                }
+            },
+            "id": 126339922,
+            "time": 106,
+            "injury": true,
+            "isHome": true,
+            "incidentClass": "injury",
+            "reversedPeriodTime": 15,
+            "incidentType": "substitution"
+        },
+        {
+            "length": 2,
+            "time": 105,
+            "addedTime": 0,
+            "reversedPeriodTime": 1,
+            "incidentType": "injuryTime"
+        },
+        {
+            "player": {
+                "name": "Declan Rice",
+                "firstName": "Declan",
+                "lastName": "Rice",
+                "slug": "declan-rice",
+                "shortName": "D. Rice",
+                "position": "M",
+                "jerseyNumber": "41",
+                "height": 188,
+                "userCount": 74007,
+                "gender": "M",
+                "sofascoreId": "DeclanRice",
+                "id": 856714,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 916272000,
+                "proposedMarketValueRaw": {
+                    "value": 114000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u062f\u064a\u0643\u0644\u0627\u0646 \u0631\u0627\u064a\u0633",
+                        "bn": "\u09a1\u09c7\u0995\u09cd\u09b2\u09be\u09a8 \u09b0\u09be\u0987\u09b8",
+                        "hi": "\u0921\u0947\u0915\u094d\u0932\u093e\u0928 \u0930\u093e\u0907\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u062f. \u0631\u0627\u064a\u0633",
+                        "bn": "\u09a1\u09bf. \u09b0\u09be\u0987\u09b8",
+                        "hi": "\u0921\u0940. \u0930\u093e\u0907\u0938"
+                    }
+                }
+            },
+            "playerName": "Declan Rice",
+            "reason": "Argument",
+            "rescinded": false,
+            "id": 125248056,
+            "time": 103,
+            "isHome": false,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 3,
+            "incidentType": "card"
+        },
+        {
+            "player": {
+                "name": "Viktor Gy\u00f6keres",
+                "firstName": "Viktor",
+                "lastName": "Gyokeres",
+                "slug": "viktor-gyokeres",
+                "shortName": "V. Gy\u00f6keres",
+                "position": "F",
+                "jerseyNumber": "14",
+                "height": 187,
+                "userCount": 221497,
+                "gender": "M",
+                "sofascoreId": "VGy\u00f6keres",
+                "id": 804508,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 896918400,
+                "proposedMarketValueRaw": {
+                    "value": 61000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0641\u064a\u0643\u062a\u0648\u0631 \u063a\u064a\u0648\u0643\u064a\u0631\u064a\u0633",
+                        "bn": "\u09ad\u09bf\u0995\u09cd\u099f\u09b0 \u0997\u09cb\u0995\u09c7\u09b0\u09c7\u09b8",
+                        "hi": "\u0935\u093f\u0915\u094d\u091f\u0930 \u0917\u094d\u092f\u094b\u0915\u0947\u0930\u0947\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0641. \u063a\u064a\u0648\u0643\u064a\u0631\u064a\u0633",
+                        "bn": "\u09ad\u09bf. \u0997\u09cb\u0995\u09c7\u09b0\u09c7\u09b8",
+                        "hi": "\u0935\u0940. \u0917\u094d\u092f\u094b\u0915\u0947\u0930\u0947\u0938"
+                    }
+                }
+            },
+            "playerName": "Viktor Gy\u00f6keres",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 125248050,
+            "time": 98,
+            "isHome": false,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 8,
+            "incidentType": "card"
+        },
+        {
+            "playerIn": {
+                "name": "Warren Za\u00efre-Emery",
+                "firstName": "",
+                "lastName": "",
+                "slug": "warren-zaire-emery",
+                "shortName": "W. Za\u00efre-Emery",
+                "position": "M",
+                "jerseyNumber": "33",
+                "height": 178,
+                "userCount": 19373,
+                "gender": "M",
+                "sofascoreId": "wzairemery6",
+                "id": 1142672,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1141776000,
+                "proposedMarketValueRaw": {
+                    "value": 78000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0648\u0627\u0631\u0646 \u0632\u0627\u0626\u064a\u0631 \u0625\u064a\u0645\u0631\u064a",
+                        "bn": "\u0993\u09af\u09bc\u09be\u09b0\u09c7\u09a8 \u099c\u09be\u09af\u09bc\u09be\u09b0-\u098f\u09ae\u09c7\u09b0\u09bf",
+                        "hi": "\u0935\u0949\u0930\u0947\u0928 \u091c\u093c\u0948\u0930\u0947-\u090f\u092e\u0930\u0940"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0648. \u0632\u064a\u0631 \u0625\u064a\u0645\u0631\u064a",
+                        "bn": "\u09a1\u09ac\u09cd\u09b2\u09bf\u0989. \u099c\u09be\u0987\u09b0\u09c7-\u098f\u09ae\u09c7\u09b0\u09bf",
+                        "hi": "\u0921\u092c\u094d\u0932\u0942. \u091c\u093c\u0948\u0930\u0947-\u090f\u092e\u0930\u0940"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Fabi\u00e1n Ruiz",
+                "firstName": "Fabian",
+                "lastName": "Ruiz",
+                "slug": "fabian-ruiz",
+                "shortName": "F. Ruiz",
+                "position": "M",
+                "jerseyNumber": "8",
+                "height": 189,
+                "userCount": 24224,
+                "gender": "M",
+                "sofascoreId": "fabianruiz52",
+                "id": 784655,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 828489600,
+                "proposedMarketValueRaw": {
+                    "value": 29000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0641\u0627\u0628\u064a\u0627\u0646 \u0631\u0648\u064a\u0632",
+                        "bn": "\u09ab\u09cd\u09af\u09be\u09ac\u09bf\u09af\u09bc\u09be\u09a8 \u09b0\u09c1\u0987\u099c",
+                        "hi": "\u092b\u093c\u0947\u092c\u093f\u092f\u093e\u0928 \u0930\u0941\u0907\u091c\u093c"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0641. \u0631\u0648\u064a\u0632",
+                        "bn": "\u098f\u09ab. \u09b0\u09c1\u0987\u099c",
+                        "hi": "\u090f\u092b. \u0930\u0941\u0907\u091c\u093c"
+                    }
+                }
+            },
+            "id": 126339911,
+            "time": 95,
+            "injury": false,
+            "isHome": true,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 11,
+            "incidentType": "substitution"
+        },
+        {
+            "playerIn": {
+                "name": "Eberechi Eze",
+                "firstName": "Eberechi",
+                "lastName": "Eze",
+                "slug": "eberechi-eze",
+                "shortName": "E. Eze",
+                "position": "M",
+                "jerseyNumber": "10",
+                "height": 178,
+                "userCount": 64095,
+                "gender": "M",
+                "sofascoreId": "eze",
+                "id": 864921,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 899078400,
+                "proposedMarketValueRaw": {
+                    "value": 63000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0625\u064a\u0628\u064a\u0631\u064a\u0634\u064a \u0625\u064a\u0632\u064a",
+                        "bn": "\u0987\u09ac\u09c7\u09b0\u09c7\u099a\u09bf \u098f\u099c",
+                        "hi": "\u090f\u092c\u0947\u0930\u091a\u0940 \u0908\u091c\u093c\u0947"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0625. \u0625\u064a\u0632\u064a",
+                        "bn": "\u0987. \u098f\u099c",
+                        "hi": "\u0908. \u0908\u091c\u093c\u0947"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Kai Havertz",
+                "firstName": "Kai",
+                "lastName": "Havertz",
+                "slug": "kai-havertz",
+                "shortName": "K. Havertz",
+                "position": "F",
+                "jerseyNumber": "29",
+                "height": 193,
+                "userCount": 72006,
+                "gender": "M",
+                "sofascoreId": "KaiHav",
+                "id": 836705,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 929059200,
+                "proposedMarketValueRaw": {
+                    "value": 48000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0643\u0627\u064a \u0647\u0627\u0641\u064a\u0631\u062a\u0633",
+                        "bn": "\u0995\u09be\u0987 \u09b9\u09be\u09ad\u09be\u09b0\u09cd\u099f\u099c",
+                        "hi": "\u0915\u093e\u0908 \u0939\u093e\u0935\u0930\u094d\u091f\u094d\u091c\u093c"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0643. \u0647\u0627\u0641\u064a\u0631\u062a\u0633",
+                        "bn": "\u0995\u09c7. \u09b9\u09be\u09ad\u09be\u09b0\u09cd\u099f\u099c",
+                        "hi": "\u0915\u0947. \u0939\u093e\u0935\u0930\u094d\u091f\u094d\u091c\u093c"
+                    }
+                }
+            },
+            "id": 126339877,
+            "time": 91,
+            "injury": false,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 15,
+            "incidentType": "substitution"
+        },
+        {
+            "playerIn": {
+                "name": "Mart\u00edn Zubimendi",
+                "slug": "martin-zubimendi",
+                "shortName": "M. Zubimendi",
+                "position": "M",
+                "jerseyNumber": "36",
+                "height": 180,
+                "userCount": 29034,
+                "gender": "M",
+                "sofascoreId": "martin_zubimendi",
+                "id": 966837,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 917913600,
+                "proposedMarketValueRaw": {
+                    "value": 82000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0645\u0627\u0631\u062a\u0646 \u0632\u0648\u0628\u064a\u0645\u064a\u0646\u062f\u064a",
+                        "bn": "\u09ae\u09be\u09b0\u09cd\u099f\u09bf\u09a8 \u099c\u09c1\u09ac\u09bf\u09ae\u09c7\u09a8\u09cd\u09a1\u09bf",
+                        "hi": "\u092e\u093e\u0930\u094d\u091f\u093f\u0928 \u091c\u093c\u0941\u092c\u093f\u092e\u0947\u0902\u0921\u0940"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0645. \u0632\u0648\u0628\u064a\u0645\u064a\u0646\u062f\u064a",
+                        "bn": "\u098f\u09ae. \u099c\u09c1\u09ac\u09bf\u09ae\u09c7\u09a8\u09cd\u09a6\u09bf",
+                        "hi": "\u090f\u092e. \u091c\u093c\u0941\u092c\u093f\u092e\u0947\u0902\u0921\u0940"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Myles Lewis-Skelly",
+                "firstName": "Myles Lewis-Skelly",
+                "slug": "lewis-skelly-myles",
+                "shortName": "M. Lewis-Skelly",
+                "position": "D",
+                "jerseyNumber": "49",
+                "height": 178,
+                "userCount": 18867,
+                "gender": "M",
+                "sofascoreId": "myleslewisskelly",
+                "id": 1423711,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1159228800,
+                "proposedMarketValueRaw": {
+                    "value": 37000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0645\u0627\u064a\u0644\u0632 \u0644\u0648\u064a\u0633 \u0633\u0643\u064a\u0644\u064a",
+                        "bn": "\u09b2\u09c1\u0987\u09b8-\u09b8\u09cd\u0995\u09c7\u09b2\u09bf, \u09ae\u09be\u0987\u09b2\u09b8",
+                        "hi": "\u0932\u0941\u0908\u0938-\u0938\u094d\u0915\u0947\u0932\u0940, \u092e\u093e\u0907\u0932\u094d\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0645. \u0644\u0648\u064a\u0633 \u0633\u0643\u064a\u0644\u064a",
+                        "bn": "\u098f\u09ae. \u09b2\u09c1\u0987\u09b8-\u09b8\u09cd\u0995\u09c7\u09b2\u09bf",
+                        "hi": "\u090f\u092e. \u0932\u0941\u0908\u0938-\u0938\u094d\u0915\u0947\u0932\u0940"
+                    }
+                }
+            },
+            "id": 126339874,
+            "time": 91,
+            "injury": false,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 15,
+            "incidentType": "substitution"
+        },
+        {
+            "text": "FT",
+            "homeScore": 1,
+            "awayScore": 1,
+            "isLive": false,
+            "time": 90,
+            "addedTime": 999,
+            "timeSeconds": 5400,
+            "reversedPeriodTime": 1,
+            "reversedPeriodTimeSeconds": 0,
+            "periodTimeSeconds": 2700,
+            "incidentType": "period"
+        },
+        {
+            "playerIn": {
+                "name": "Gon\u00e7alo Ramos",
+                "firstName": "Goncalo",
+                "lastName": "Ramos",
+                "slug": "goncalo-ramos",
+                "shortName": "G. Ramos",
+                "position": "F",
+                "jerseyNumber": "9",
+                "height": 185,
+                "userCount": 25989,
+                "gender": "M",
+                "sofascoreId": "goncaloramos88",
+                "id": 934510,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 992995200,
+                "proposedMarketValueRaw": {
+                    "value": 32000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u063a\u0648\u0646\u0633\u0627\u0644\u0648 \u0631\u0627\u0645\u0648\u0633",
+                        "bn": "\u0997\u09a8\u09b8\u09be\u09b2\u09cb \u09b0\u09be\u09ae\u09cb\u09b8",
+                        "hi": "\u0917\u094b\u0902\u0938\u093e\u0932\u094b \u0930\u093e\u092e\u094b\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u063a. \u0631\u0627\u0645\u0648\u0633",
+                        "bn": "\u099c\u09bf. \u09b0\u09be\u09ae\u09cb\u09b8",
+                        "hi": "\u091c\u0940. \u0930\u093e\u092e\u094b\u0938"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Ousmane Demb\u00e9l\u00e9",
+                "firstName": "Ousmane",
+                "lastName": "Dembele",
+                "slug": "ousmane-dembele",
+                "shortName": "O. Demb\u00e9l\u00e9",
+                "position": "F",
+                "jerseyNumber": "10",
+                "height": 178,
+                "userCount": 291420,
+                "gender": "M",
+                "sofascoreId": "ODemb\u00e9l\u00e9",
+                "id": 818244,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 863654400,
+                "proposedMarketValueRaw": {
+                    "value": 97000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0639\u062b\u0645\u0627\u0646 \u062f\u064a\u0645\u0628\u064a\u0644\u064a",
+                        "bn": "\u0989\u09b8\u09ae\u09be\u09a8 \u09a1\u09c7\u09ae\u09cd\u09ac\u09c7\u09b2\u09c7",
+                        "hi": "\u0909\u0938\u094d\u092e\u093e\u0928 \u0921\u0947\u092e\u094d\u092c\u0947\u0932\u0947"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0639. \u062f\u064a\u0645\u0628\u064a\u0644\u064a",
+                        "bn": "\u0993. \u09a1\u09c7\u09ae\u09cd\u09ac\u09c7\u09b2\u09c7",
+                        "hi": "\u0913. \u0921\u0947\u092e\u094d\u092c\u0947\u0932\u0947"
+                    }
+                }
+            },
+            "id": 126339862,
+            "time": 90,
+            "addedTime": 6,
+            "injury": true,
+            "isHome": true,
+            "incidentClass": "injury",
+            "reversedPeriodTime": 1,
+            "incidentType": "substitution"
+        },
+        {
+            "player": {
+                "name": "Jo\u00e3o Neves",
+                "firstName": "Joao",
+                "lastName": "Neves",
+                "slug": "joao-neves",
+                "shortName": "J. Neves",
+                "position": "M",
+                "jerseyNumber": "87",
+                "height": 174,
+                "userCount": 44907,
+                "gender": "M",
+                "sofascoreId": "joao_neves",
+                "id": 1190933,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1096243200,
+                "proposedMarketValueRaw": {
+                    "value": 116000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u062c\u0648\u0627\u0648 \u0646\u064a\u0641\u064a\u0633",
+                        "bn": "\u099c\u09cb\u09af\u09bc\u09be\u0993 \u09a8\u09c7\u09ad\u09c7\u09b8",
+                        "hi": "\u091c\u094b\u0906\u0913 \u0928\u0947\u0935\u0947\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u062c. \u0646\u064a\u0641\u064a\u0633",
+                        "bn": "\u099c\u09c7. \u09a8\u09c7\u09ad\u09c7\u09b8",
+                        "hi": "\u091c\u0947. \u0928\u0947\u0935\u0947\u0938"
+                    }
+                }
+            },
+            "playerName": "Jo\u00e3o Neves",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 125248020,
+            "time": 90,
+            "addedTime": 6,
+            "isHome": true,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 1,
+            "incidentType": "card"
+        },
+        {
+            "length": 6,
+            "time": 90,
+            "addedTime": 0,
+            "reversedPeriodTime": 1,
+            "incidentType": "injuryTime"
+        },
+        {
+            "playerIn": {
+                "name": "Noni Madueke",
+                "slug": "noni-madueke",
+                "shortName": "N. Madueke",
+                "position": "F",
+                "jerseyNumber": "20",
+                "height": 182,
+                "userCount": 42819,
+                "gender": "M",
+                "sofascoreId": "nonzinoo10",
+                "id": 966547,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1015718400,
+                "proposedMarketValueRaw": {
+                    "value": 54000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0646\u0648\u0646\u064a \u0645\u0627\u062f\u0648\u064a\u0643\u064a",
+                        "bn": "\u09a8\u09a8\u09bf \u09ae\u09be\u09a6\u09c1\u0995\u09c7",
+                        "hi": "\u0928\u094b\u0928\u0940 \u092e\u0926\u0941\u0915\u0947"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0646. \u0645\u0627\u062f\u0648\u064a\u0643\u064a",
+                        "bn": "\u098f\u09a8. \u09ae\u09be\u09a6\u09c1\u0995\u09c7",
+                        "hi": "\u090f\u0928. \u092e\u0926\u0941\u0915\u0947"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Bukayo Saka",
+                "firstName": "Bukayo",
+                "lastName": "Saka",
+                "slug": "bukayo-saka",
+                "shortName": "B. Saka",
+                "position": "F",
+                "jerseyNumber": "7",
+                "height": 178,
+                "userCount": 204081,
+                "gender": "M",
+                "sofascoreId": "BSaka7",
+                "id": 934235,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 999648000,
+                "proposedMarketValueRaw": {
+                    "value": 126000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0628\u0648\u0643\u0627\u064a\u0648 \u0633\u0627\u0643\u0627",
+                        "bn": "\u09ac\u09c1\u0995\u09be\u09af\u09bc\u09cb \u09b8\u09be\u0995\u09be",
+                        "hi": "\u092c\u0941\u0915\u093e\u092f\u094b \u0938\u093e\u0915\u093e"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0628. \u0633\u0627\u0643\u0627",
+                        "bn": "\u09ac\u09bf. \u09b8\u09be\u0995\u09be",
+                        "hi": "\u092c\u0940. \u0938\u093e\u0915\u093e"
+                    }
+                }
+            },
+            "id": 126339831,
+            "time": 83,
+            "injury": false,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 8,
+            "incidentType": "substitution"
+        },
+        {
+            "playerIn": {
+                "name": "Bradley Barcola",
+                "slug": "barcola-bradley",
+                "shortName": "B. Barcola",
+                "position": "F",
+                "jerseyNumber": "29",
+                "height": 182,
+                "userCount": 42621,
+                "gender": "M",
+                "sofascoreId": "bradley_b",
+                "id": 996952,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1030924800,
+                "proposedMarketValueRaw": {
+                    "value": 68000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0628\u0631\u0627\u062f\u0644\u064a \u0628\u0627\u0631\u0643\u0648\u0644\u0627",
+                        "bn": "\u09ac\u09be\u09b0\u0995\u09cb\u09b2\u09be, \u09ac\u09cd\u09b0\u09cd\u09af\u09be\u09a1\u09b2\u09bf",
+                        "hi": "\u092c\u093e\u0930\u0915\u094b\u0932\u093e, \u092c\u094d\u0930\u0948\u0921\u0932\u0940"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0628. \u0628\u0627\u0631\u0643\u0648\u0644\u0627",
+                        "bn": "\u09ac\u09bf. \u09ac\u09be\u09b0\u0995\u09cb\u09b2\u09be",
+                        "hi": "\u092c\u0940. \u092c\u093e\u0930\u0915\u094b\u0932\u093e"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Khvicha Kvaratskhelia",
+                "firstName": "Khvicha",
+                "lastName": "Kvaratskhelia",
+                "slug": "khvicha-kvaratskhelia",
+                "shortName": "K. Kvaratskhelia",
+                "position": "F",
+                "jerseyNumber": "7",
+                "height": 183,
+                "userCount": 149023,
+                "gender": "M",
+                "sofascoreId": "Kvaradona",
+                "id": 889259,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 981936000,
+                "proposedMarketValueRaw": {
+                    "value": 144000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u062e\u0641\u064a\u062a\u0634\u0627 \u0643\u0641\u0627\u0631\u0627\u062a\u0633\u062e\u064a\u0644\u064a\u0627",
+                        "bn": "\u0996\u09be\u09ad\u09bf\u099a\u09be \u0995\u09ad\u09be\u09b0\u09be\u099f\u09b6\u09c7\u09b2\u09bf\u09af\u09bc\u09be",
+                        "hi": "\u0916\u093c\u0935\u093f\u091a\u093e \u0915\u094d\u0935\u093e\u0930\u0924\u094d\u0938\u0916\u0947\u0932\u093f\u092f\u093e"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u062e. \u0643\u0641\u0627\u0631\u0627\u062a\u0633\u062e\u064a\u0644\u064a\u0627",
+                        "bn": "\u0995\u09c7. \u0995\u09ad\u09be\u09b0\u09be\u099f\u09b6\u09c7\u09b2\u09bf\u09af\u09bc\u09be",
+                        "hi": "\u0915\u0947. \u0915\u094d\u0935\u093e\u0930\u0924\u094d\u0938\u0916\u0947\u0932\u093f\u092f\u093e"
+                    }
+                }
+            },
+            "id": 126339829,
+            "time": 83,
+            "injury": false,
+            "isHome": true,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 8,
+            "incidentType": "substitution"
+        },
+        {
+            "playerIn": {
+                "name": "Gabriel Martinelli",
+                "slug": "gabriel-martinelli",
+                "shortName": "G. Martinelli",
+                "position": "F",
+                "jerseyNumber": "11",
+                "height": 180,
+                "userCount": 73497,
+                "gender": "M",
+                "sofascoreId": "GabiMartinelli",
+                "id": 922573,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 992822400,
+                "proposedMarketValueRaw": {
+                    "value": 42000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u063a\u0627\u0628\u0631\u064a\u064a\u0644 \u0645\u0627\u0631\u062a\u064a\u0646\u064a\u0644\u064a",
+                        "bn": "\u0997\u09cd\u09af\u09be\u09ac\u09cd\u09b0\u09bf\u09af\u09bc\u09c7\u09b2 \u09ae\u09be\u09b0\u09cd\u099f\u09bf\u09a8\u09c7\u09b2\u09bf",
+                        "hi": "\u0917\u0947\u092c\u094d\u0930\u093f\u092f\u0932 \u092e\u093e\u0930\u094d\u091f\u093f\u0928\u0947\u0932\u0940"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u063a. \u0645\u0627\u0631\u062a\u064a\u0646\u064a\u0644\u064a",
+                        "bn": "\u099c\u09bf. \u09ae\u09be\u09b0\u09cd\u099f\u09bf\u09a8\u09c7\u09b2\u09bf",
+                        "hi": "\u091c\u0940. \u092e\u093e\u0930\u094d\u091f\u093f\u0928\u0947\u0932\u0940"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Leandro Trossard",
+                "firstName": "Leandro",
+                "lastName": "Trossard",
+                "slug": "leandro-trossard",
+                "shortName": "L. Trossard",
+                "position": "F",
+                "jerseyNumber": "19",
+                "height": 172,
+                "userCount": 33956,
+                "gender": "M",
+                "sofascoreId": "leandrotrossard",
+                "id": 135666,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 786499200,
+                "proposedMarketValueRaw": {
+                    "value": 21000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0644\u064a\u0627\u0646\u062f\u0631\u0648 \u062a\u0631\u0648\u0633\u0627\u0631",
+                        "bn": "\u09b2\u09bf\u09af\u09bc\u09c7\u09a8\u09cd\u09a6\u09cd\u09b0\u09cb \u099f\u09cd\u09b0\u09b8\u09be\u09b0\u09cd\u09a1",
+                        "hi": "\u0932\u093f\u090f\u0902\u0921\u094d\u0930\u094b \u091f\u094d\u0930\u094b\u0938\u093e\u0930\u094d\u0921"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0644. \u062a\u0631\u0648\u0633\u0627\u0631",
+                        "bn": "\u098f\u09b2. \u099f\u09cd\u09b0\u09b8\u09be\u09b0\u09cd\u09a1",
+                        "hi": "\u090f\u0932. \u091f\u094d\u0930\u094b\u0938\u093e\u0930\u094d\u0921"
+                    }
+                }
+            },
+            "id": 126339830,
+            "time": 83,
+            "injury": false,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 8,
+            "incidentType": "substitution"
+        },
+        {
+            "playerIn": {
+                "name": "Viktor Gy\u00f6keres",
+                "firstName": "Viktor",
+                "lastName": "Gyokeres",
+                "slug": "viktor-gyokeres",
+                "shortName": "V. Gy\u00f6keres",
+                "position": "F",
+                "jerseyNumber": "14",
+                "height": 187,
+                "userCount": 221497,
+                "gender": "M",
+                "sofascoreId": "VGy\u00f6keres",
+                "id": 804508,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 896918400,
+                "proposedMarketValueRaw": {
+                    "value": 61000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0641\u064a\u0643\u062a\u0648\u0631 \u063a\u064a\u0648\u0643\u064a\u0631\u064a\u0633",
+                        "bn": "\u09ad\u09bf\u0995\u09cd\u099f\u09b0 \u0997\u09cb\u0995\u09c7\u09b0\u09c7\u09b8",
+                        "hi": "\u0935\u093f\u0915\u094d\u091f\u0930 \u0917\u094d\u092f\u094b\u0915\u0947\u0930\u0947\u0938"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0641. \u063a\u064a\u0648\u0643\u064a\u0631\u064a\u0633",
+                        "bn": "\u09ad\u09bf. \u0997\u09cb\u0995\u09c7\u09b0\u09c7\u09b8",
+                        "hi": "\u0935\u0940. \u0917\u094d\u092f\u094b\u0915\u0947\u0930\u0947\u0938"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Martin \u00d8degaard",
+                "slug": "martin-degaard",
+                "shortName": "M. \u00d8degaard",
+                "position": "M",
+                "jerseyNumber": "8",
+                "height": 178,
+                "userCount": 83307,
+                "gender": "M",
+                "sofascoreId": "\u00d8degaard",
+                "id": 547410,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 913852800,
+                "proposedMarketValueRaw": {
+                    "value": 71000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0645\u0627\u0631\u062a\u0646 \u0623\u0648\u062f\u064a\u063a\u0627\u0631\u062f",
+                        "bn": "\u09ae\u09be\u09b0\u09cd\u099f\u09bf\u09a8 \u0993\u09a1\u09c7\u0997\u09be\u09b0\u09cd\u09a1",
+                        "hi": "\u092e\u093e\u0930\u094d\u091f\u093f\u0928 \u0913\u0921\u0947\u0917\u093e\u0930\u094d\u0921"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0645. \u0623\u0648\u062f\u064a\u063a\u0627\u0631\u062f",
+                        "bn": "\u098f\u09ae. \u0993\u09a1\u09c7\u0997\u09be\u09b0\u09cd\u09a1",
+                        "hi": "\u090f\u092e. \u0913\u0921\u0947\u0917\u093e\u0930\u094d\u0921"
+                    }
+                }
+            },
+            "id": 126339752,
+            "time": 66,
+            "injury": false,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 25,
+            "incidentType": "substitution"
+        },
+        {
+            "playerIn": {
+                "name": "Jurri\u00ebn Timber",
+                "firstName": "Jurrien",
+                "lastName": "Timber",
+                "slug": "jurrien-timber",
+                "shortName": "J. Timber",
+                "position": "D",
+                "jerseyNumber": "12",
+                "height": 179,
+                "userCount": 29833,
+                "gender": "M",
+                "sofascoreId": "jurrientimber",
+                "id": 958959,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 992736000,
+                "proposedMarketValueRaw": {
+                    "value": 73000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u064a\u0648\u0631\u064a\u0627\u0646 \u062a\u064a\u0645\u0628\u0631",
+                        "bn": "\u099c\u09c1\u09b0\u09bf\u09a8 \u099f\u09bf\u09ae\u09cd\u09ac\u09be\u09b0",
+                        "hi": "\u091c\u0941\u0930\u0940\u090f\u0928 \u091f\u093f\u092e\u094d\u092c\u0930"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u064a. \u062a\u064a\u0645\u0628\u0631",
+                        "bn": "\u099c\u09c7. \u099f\u09bf\u09ae\u09cd\u09ac\u09be\u09b0",
+                        "hi": "\u091c\u0947. \u091f\u093f\u092e\u094d\u092c\u0930"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Cristhian Mosquera",
+                "firstName": "Cristhian Mosquera",
+                "slug": "cristhian-mosquera",
+                "shortName": "C. Mosquera",
+                "position": "D",
+                "jerseyNumber": "3",
+                "height": 191,
+                "userCount": 18964,
+                "gender": "M",
+                "id": 1144630,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1088294400,
+                "proposedMarketValueRaw": {
+                    "value": 33000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0643\u0631\u064a\u0633\u062a\u064a\u0627\u0646 \u0645\u0648\u0633\u0643\u064a\u0631\u0627",
+                        "bn": "\u0995\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09bf\u09af\u09bc\u09be\u09a8 \u09ae\u09b8\u09cd\u0995\u09c7\u09b0\u09be",
+                        "hi": "\u0915\u094d\u0930\u093f\u0938\u094d\u091f\u093f\u092f\u0928 \u092e\u0949\u0938\u094d\u0915\u0947\u0930\u093e"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0643. \u0645\u0648\u0633\u0643\u064a\u0631\u0627",
+                        "bn": "\u09b8\u09bf. \u09ae\u09b8\u09cd\u0995\u09c7\u09b0\u09be",
+                        "hi": "\u0938\u0940. \u092e\u0949\u0938\u094d\u0915\u0947\u0930\u093e"
+                    }
+                }
+            },
+            "id": 126339751,
+            "time": 66,
+            "injury": false,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 25,
+            "incidentType": "substitution"
+        },
+        {
+            "from": "penalty",
+            "homeScore": 1,
+            "awayScore": 1,
+            "player": {
+                "name": "Ousmane Demb\u00e9l\u00e9",
+                "firstName": "Ousmane",
+                "lastName": "Dembele",
+                "slug": "ousmane-dembele",
+                "shortName": "O. Demb\u00e9l\u00e9",
+                "position": "F",
+                "jerseyNumber": "10",
+                "height": 178,
+                "userCount": 291420,
+                "gender": "M",
+                "sofascoreId": "ODemb\u00e9l\u00e9",
+                "id": 818244,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 863654400,
+                "proposedMarketValueRaw": {
+                    "value": 97000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0639\u062b\u0645\u0627\u0646 \u062f\u064a\u0645\u0628\u064a\u0644\u064a",
+                        "bn": "\u0989\u09b8\u09ae\u09be\u09a8 \u09a1\u09c7\u09ae\u09cd\u09ac\u09c7\u09b2\u09c7",
+                        "hi": "\u0909\u0938\u094d\u092e\u093e\u0928 \u0921\u0947\u092e\u094d\u092c\u0947\u0932\u0947"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0639. \u062f\u064a\u0645\u0628\u064a\u0644\u064a",
+                        "bn": "\u0993. \u09a1\u09c7\u09ae\u09cd\u09ac\u09c7\u09b2\u09c7",
+                        "hi": "\u0913. \u0921\u0947\u092e\u094d\u092c\u0947\u0932\u0947"
+                    }
+                }
+            },
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "Ousmane Demb\u00e9l\u00e9",
+                        "firstName": "Ousmane",
+                        "lastName": "Dembele",
+                        "slug": "ousmane-dembele",
+                        "shortName": "O. Demb\u00e9l\u00e9",
+                        "position": "F",
+                        "jerseyNumber": "10",
+                        "height": 178,
+                        "userCount": 291420,
+                        "gender": "M",
+                        "sofascoreId": "ODemb\u00e9l\u00e9",
+                        "id": 818244,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 863654400,
+                        "proposedMarketValueRaw": {
+                            "value": 97000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0639\u062b\u0645\u0627\u0646 \u062f\u064a\u0645\u0628\u064a\u0644\u064a",
+                                "bn": "\u0989\u09b8\u09ae\u09be\u09a8 \u09a1\u09c7\u09ae\u09cd\u09ac\u09c7\u09b2\u09c7",
+                                "hi": "\u0909\u0938\u094d\u092e\u093e\u0928 \u0921\u0947\u092e\u094d\u092c\u0947\u0932\u0947"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0639. \u062f\u064a\u0645\u0628\u064a\u0644\u064a",
+                                "bn": "\u0993. \u09a1\u09c7\u09ae\u09cd\u09ac\u09c7\u09b2\u09c7",
+                                "hi": "\u0913. \u0921\u0947\u092e\u094d\u092c\u0947\u0932\u0947"
+                            }
+                        }
+                    },
+                    "eventType": "goal",
+                    "bodyPart": "right-foot",
+                    "time": 65,
+                    "playerCoordinates": {
+                        "x": 88.5,
+                        "y": 50
+                    },
+                    "gkCoordinates": {
+                        "x": 99.8,
+                        "y": 50
+                    },
+                    "goalShotCoordinates": {
+                        "x": 100,
+                        "y": 53.8
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 29.57,
+                        "y": 93.67
+                    },
+                    "goalkeeper": {
+                        "name": "David Raya",
+                        "firstName": "David",
+                        "lastName": "Raya",
+                        "slug": "david-raya",
+                        "shortName": "D. Raya",
+                        "position": "G",
+                        "jerseyNumber": "1",
+                        "height": 183,
+                        "userCount": 31453,
+                        "gender": "M",
+                        "sofascoreId": "d_raya1",
+                        "id": 581310,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 811123200,
+                        "proposedMarketValueRaw": {
+                            "value": 38000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u062f\u064a\u0641\u064a\u062f \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09c7\u09ad\u09bf\u09a1 \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0947\u0935\u093f\u0921 \u0930\u093e\u092f\u093e"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u062f. \u0631\u0627\u064a\u0627",
+                                "bn": "\u09a1\u09bf. \u09b0\u09be\u09af\u09bc\u09be",
+                                "hi": "\u0921\u0940. \u0930\u093e\u092f\u093e"
+                            }
+                        }
+                    },
+                    "isHome": true,
+                    "goalType": "penalty"
+                }
+            ],
+            "id": 350349070,
+            "time": 65,
+            "isHome": true,
+            "incidentClass": "penalty",
+            "reversedPeriodTime": 26,
+            "incidentType": "goal"
+        },
+        {
+            "player": {
+                "name": "Bukayo Saka",
+                "firstName": "Bukayo",
+                "lastName": "Saka",
+                "slug": "bukayo-saka",
+                "shortName": "B. Saka",
+                "position": "F",
+                "jerseyNumber": "7",
+                "height": 178,
+                "userCount": 204081,
+                "gender": "M",
+                "sofascoreId": "BSaka7",
+                "id": 934235,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 999648000,
+                "proposedMarketValueRaw": {
+                    "value": 126000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0628\u0648\u0643\u0627\u064a\u0648 \u0633\u0627\u0643\u0627",
+                        "bn": "\u09ac\u09c1\u0995\u09be\u09af\u09bc\u09cb \u09b8\u09be\u0995\u09be",
+                        "hi": "\u092c\u0941\u0915\u093e\u092f\u094b \u0938\u093e\u0915\u093e"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0628. \u0633\u0627\u0643\u0627",
+                        "bn": "\u09ac\u09bf. \u09b8\u09be\u0995\u09be",
+                        "hi": "\u092c\u0940. \u0938\u093e\u0915\u093e"
+                    }
+                }
+            },
+            "playerName": "Bukayo Saka",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 125247895,
+            "time": 54,
+            "isHome": false,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 37,
+            "incidentType": "card"
+        },
+        {
+            "player": {
+                "name": "Cristhian Mosquera",
+                "firstName": "Cristhian Mosquera",
+                "slug": "cristhian-mosquera",
+                "shortName": "C. Mosquera",
+                "position": "D",
+                "jerseyNumber": "3",
+                "height": 191,
+                "userCount": 18964,
+                "gender": "M",
+                "id": 1144630,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 1088294400,
+                "proposedMarketValueRaw": {
+                    "value": 33000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0643\u0631\u064a\u0633\u062a\u064a\u0627\u0646 \u0645\u0648\u0633\u0643\u064a\u0631\u0627",
+                        "bn": "\u0995\u09cd\u09b0\u09bf\u09b8\u09cd\u099f\u09bf\u09af\u09bc\u09be\u09a8 \u09ae\u09b8\u09cd\u0995\u09c7\u09b0\u09be",
+                        "hi": "\u0915\u094d\u0930\u093f\u0938\u094d\u091f\u093f\u092f\u0928 \u092e\u0949\u0938\u094d\u0915\u0947\u0930\u093e"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0643. \u0645\u0648\u0633\u0643\u064a\u0631\u0627",
+                        "bn": "\u09b8\u09bf. \u09ae\u09b8\u09cd\u0995\u09c7\u09b0\u09be",
+                        "hi": "\u0938\u0940. \u092e\u0949\u0938\u094d\u0915\u0947\u0930\u093e"
+                    }
+                }
+            },
+            "playerName": "Cristhian Mosquera",
+            "reason": "Time wasting",
+            "rescinded": false,
+            "id": 125247863,
+            "time": 46,
+            "isHome": false,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 45,
+            "incidentType": "card"
+        },
+        {
+            "text": "HT",
+            "homeScore": 0,
+            "awayScore": 1,
+            "isLive": false,
+            "time": 45,
+            "addedTime": 999,
+            "timeSeconds": 2700,
+            "reversedPeriodTime": 1,
+            "reversedPeriodTimeSeconds": 0,
+            "periodTimeSeconds": 2700,
+            "incidentType": "period"
+        },
+        {
+            "length": 6,
+            "time": 45,
+            "addedTime": 0,
+            "reversedPeriodTime": 1,
+            "incidentType": "injuryTime"
+        },
+        {
+            "homeScore": 0,
+            "awayScore": 1,
+            "player": {
+                "name": "Kai Havertz",
+                "firstName": "Kai",
+                "lastName": "Havertz",
+                "slug": "kai-havertz",
+                "shortName": "K. Havertz",
+                "position": "F",
+                "jerseyNumber": "29",
+                "height": 193,
+                "userCount": 72006,
+                "gender": "M",
+                "sofascoreId": "KaiHav",
+                "id": 836705,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 929059200,
+                "proposedMarketValueRaw": {
+                    "value": 48000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0643\u0627\u064a \u0647\u0627\u0641\u064a\u0631\u062a\u0633",
+                        "bn": "\u0995\u09be\u0987 \u09b9\u09be\u09ad\u09be\u09b0\u09cd\u099f\u099c",
+                        "hi": "\u0915\u093e\u0908 \u0939\u093e\u0935\u0930\u094d\u091f\u094d\u091c\u093c"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0643. \u0647\u0627\u0641\u064a\u0631\u062a\u0633",
+                        "bn": "\u0995\u09c7. \u09b9\u09be\u09ad\u09be\u09b0\u09cd\u099f\u099c",
+                        "hi": "\u0915\u0947. \u0939\u093e\u0935\u0930\u094d\u091f\u094d\u091c\u093c"
+                    }
+                }
+            },
+            "assist1": {
+                "name": "Leandro Trossard",
+                "firstName": "Leandro",
+                "lastName": "Trossard",
+                "slug": "leandro-trossard",
+                "shortName": "L. Trossard",
+                "position": "F",
+                "jerseyNumber": "19",
+                "height": 172,
+                "userCount": 33956,
+                "gender": "M",
+                "sofascoreId": "leandrotrossard",
+                "id": 135666,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 786499200,
+                "proposedMarketValueRaw": {
+                    "value": 21000000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0644\u064a\u0627\u0646\u062f\u0631\u0648 \u062a\u0631\u0648\u0633\u0627\u0631",
+                        "bn": "\u09b2\u09bf\u09af\u09bc\u09c7\u09a8\u09cd\u09a6\u09cd\u09b0\u09cb \u099f\u09cd\u09b0\u09b8\u09be\u09b0\u09cd\u09a1",
+                        "hi": "\u0932\u093f\u090f\u0902\u0921\u094d\u0930\u094b \u091f\u094d\u0930\u094b\u0938\u093e\u0930\u094d\u0921"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0644. \u062a\u0631\u0648\u0633\u0627\u0631",
+                        "bn": "\u098f\u09b2. \u099f\u09cd\u09b0\u09b8\u09be\u09b0\u09cd\u09a1",
+                        "hi": "\u090f\u0932. \u091f\u094d\u0930\u094b\u0938\u093e\u0930\u094d\u0921"
+                    }
+                }
+            },
+            "footballPassingNetworkAction": [
+                {
+                    "player": {
+                        "name": "Leandro Trossard",
+                        "firstName": "Leandro",
+                        "lastName": "Trossard",
+                        "slug": "leandro-trossard",
+                        "shortName": "L. Trossard",
+                        "position": "F",
+                        "jerseyNumber": "19",
+                        "height": 172,
+                        "userCount": 33956,
+                        "gender": "M",
+                        "sofascoreId": "leandrotrossard",
+                        "id": 135666,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 786499200,
+                        "proposedMarketValueRaw": {
+                            "value": 21000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0644\u064a\u0627\u0646\u062f\u0631\u0648 \u062a\u0631\u0648\u0633\u0627\u0631",
+                                "bn": "\u09b2\u09bf\u09af\u09bc\u09c7\u09a8\u09cd\u09a6\u09cd\u09b0\u09cb \u099f\u09cd\u09b0\u09b8\u09be\u09b0\u09cd\u09a1",
+                                "hi": "\u0932\u093f\u090f\u0902\u0921\u094d\u0930\u094b \u091f\u094d\u0930\u094b\u0938\u093e\u0930\u094d\u0921"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0644. \u062a\u0631\u0648\u0633\u0627\u0631",
+                                "bn": "\u098f\u09b2. \u099f\u09cd\u09b0\u09b8\u09be\u09b0\u09cd\u09a1",
+                                "hi": "\u090f\u0932. \u091f\u094d\u0930\u094b\u0938\u093e\u0930\u094d\u0921"
+                            }
+                        }
+                    },
+                    "eventType": "ball-touch",
+                    "isAssist": true,
+                    "time": 5,
+                    "playerCoordinates": {
+                        "x": 46,
+                        "y": 10.3
+                    },
+                    "isHome": false
+                },
+                {
+                    "player": {
+                        "name": "Kai Havertz",
+                        "firstName": "Kai",
+                        "lastName": "Havertz",
+                        "slug": "kai-havertz",
+                        "shortName": "K. Havertz",
+                        "position": "F",
+                        "jerseyNumber": "29",
+                        "height": 193,
+                        "userCount": 72006,
+                        "gender": "M",
+                        "sofascoreId": "KaiHav",
+                        "id": 836705,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 929059200,
+                        "proposedMarketValueRaw": {
+                            "value": 48000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0643\u0627\u064a \u0647\u0627\u0641\u064a\u0631\u062a\u0633",
+                                "bn": "\u0995\u09be\u0987 \u09b9\u09be\u09ad\u09be\u09b0\u09cd\u099f\u099c",
+                                "hi": "\u0915\u093e\u0908 \u0939\u093e\u0935\u0930\u094d\u091f\u094d\u091c\u093c"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0643. \u0647\u0627\u0641\u064a\u0631\u062a\u0633",
+                                "bn": "\u0995\u09c7. \u09b9\u09be\u09ad\u09be\u09b0\u09cd\u099f\u099c",
+                                "hi": "\u0915\u0947. \u0939\u093e\u0935\u0930\u094d\u091f\u094d\u091c\u093c"
+                            }
+                        }
+                    },
+                    "eventType": "goal",
+                    "bodyPart": "left-foot",
+                    "time": 6,
+                    "playerCoordinates": {
+                        "x": 3.9,
+                        "y": 34
+                    },
+                    "gkCoordinates": {
+                        "x": 0.2,
+                        "y": 44.6
+                    },
+                    "goalShotCoordinates": {
+                        "x": 0,
+                        "y": 47
+                    },
+                    "goalMouthCoordinates": {
+                        "x": 33.87,
+                        "y": 42
+                    },
+                    "goalkeeper": {
+                        "name": "Matvey Safonov",
+                        "firstName": "Matvey",
+                        "lastName": "Safonov",
+                        "slug": "matvey-safonov",
+                        "shortName": "M. Safonov",
+                        "position": "G",
+                        "jerseyNumber": "39",
+                        "height": 191,
+                        "userCount": 33226,
+                        "gender": "M",
+                        "sofascoreId": "MSafonov",
+                        "id": 800749,
+                        "marketValueCurrency": "EUR",
+                        "dateOfBirthTimestamp": 919900800,
+                        "proposedMarketValueRaw": {
+                            "value": 32000000,
+                            "currency": "EUR"
+                        },
+                        "fieldTranslations": {
+                            "nameTranslation": {
+                                "ar": "\u0645\u0627\u062a\u0641\u064a \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u09ae\u09cd\u09af\u09be\u099f\u09ad\u09c7 \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u092e\u093e\u091f\u0935\u0947 \u0938\u092b\u094b\u0928\u094b\u0935"
+                            },
+                            "shortNameTranslation": {
+                                "ar": "\u0645. \u0633\u0627\u0641\u0648\u0646\u0648\u0641",
+                                "bn": "\u098f\u09ae. \u09b8\u09be\u09ab\u09cb\u09a8\u09ad",
+                                "hi": "\u090f\u092e. \u0938\u092b\u094b\u0928\u094b\u0935"
+                            }
+                        }
+                    },
+                    "isHome": false,
+                    "goalType": "regular"
+                }
+            ],
+            "id": 350339016,
+            "time": 6,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 40,
+            "incidentType": "goal"
+        },
+        {
+            "playerName": "Mikel Arteta",
+            "reason": "Argument",
+            "manager": {
+                "name": "Mikel Arteta",
+                "slug": "mikel-arteta",
+                "shortName": "M. Arteta",
+                "id": 794075,
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "\u0645\u064a\u0643\u064a\u0644 \u0623\u0631\u062a\u064a\u062a\u0627",
+                        "bn": "\u09ae\u09bf\u0995\u09c7\u09b2 \u0986\u09b0\u09cd\u09a4\u09c7\u09a4\u09be",
+                        "hi": "\u092e\u093f\u0915\u0947\u0932 \u0906\u0930\u094d\u091f\u0947\u091f\u093e"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "\u0645. \u0623\u0631\u062a\u064a\u062a\u0627",
+                        "hi": "\u090f\u092e. \u0906\u0930\u094d\u091f\u0947\u091f\u093e",
+                        "bn": "\u098f\u09ae. \u0986\u09b0\u09a4\u09c7\u09a4\u09be"
+                    }
+                }
+            },
+            "rescinded": false,
+            "id": 125248057,
+            "time": -5,
+            "isHome": false,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 6,
+            "incidentType": "card"
+        }
+    ],
+    "home": {
+        "goalkeeperColor": {
+            "primary": "f5ea33",
+            "number": "fcfcfc",
+            "outline": "f5ea33",
+            "fancyNumber": "222226"
+        },
+        "playerColor": {
+            "primary": "18345e",
+            "number": "ffffff",
+            "outline": "18345e",
+            "fancyNumber": "ffffff"
+        }
+    },
+    "away": {
+        "goalkeeperColor": {
+            "primary": "ffd60f",
+            "number": "040404",
+            "outline": "ffd60f",
+            "fancyNumber": "222226"
+        },
+        "playerColor": {
+            "primary": "e10000",
+            "number": "ffffff",
+            "outline": "e10000",
+            "fancyNumber": "ffffff"
+        }
+    }
+}

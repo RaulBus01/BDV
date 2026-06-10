@@ -5,7 +5,7 @@ import json
 import time
 
 # Read the CSV file
-csv_path = "world_cup_squads.csv"
+csv_path = "world_cup_squadsNew.csv"
 df = pd.read_csv(csv_path)
 
 # Keep only relevant columns
@@ -78,9 +78,9 @@ async def fetch_player_sofascore_id(player_name, club, nationality, page):
             'Club': club,
             'Nationality': nationality,
             'Sofascore_ID': None,
-            'Sofascore_Name': None,
-            'Sofascore_Club': None,
-            'Position': None,
+            'Sofascore_Name': player_name,
+            'Sofascore_Club': club,
+            'Position': entity.get('position') if 'entity' in locals() else None,
             'Match_Score': 'No Match'
         }
         
@@ -91,9 +91,9 @@ async def fetch_player_sofascore_id(player_name, club, nationality, page):
             'Club': club,
             'Nationality': nationality,
             'Sofascore_ID': None,
-            'Sofascore_Name': None,
-            'Sofascore_Club': None,
-            'Position': None,
+            'Sofascore_Name': player_name,
+            'Sofascore_Club': club,
+            'Position': entity.get('position') if 'entity' in locals() else None,
             'Match_Score': f'Error: {str(e)}'
         }
 
@@ -105,7 +105,7 @@ async def scrape_all_players():
     
     async with async_playwright() as p:
         # Launch browser with Chromium
-        browser = await p.chromium.launch(headless=False)
+        browser = await p.chromium.launch(headless=False)  # Set to True to run headless
         context = await browser.new_context()
         page = await context.new_page()
         
@@ -121,7 +121,7 @@ async def scrape_all_players():
             results.append(result)
             
             # Add delay between requests to avoid rate limiting
-            await asyncio.sleep(0.5)
+            await asyncio.sleep(1)
         
         await browser.close()
     
@@ -139,7 +139,7 @@ async def main():
     results_df = pd.DataFrame(results)
     
     # Save to CSV
-    output_path = "sofascore_player_ids.csv"
+    output_path = "sofascore_player_idsNew.csv"
     results_df.to_csv(output_path, index=False)
     
     print(f"\n✓ Scraping complete!")

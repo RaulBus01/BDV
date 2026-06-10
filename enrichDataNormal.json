@@ -1,0 +1,1256 @@
+{
+    "incidents": [
+        {
+            "text": "FT",
+            "homeScore": 5,
+            "awayScore": 2,
+            "isLive": false,
+            "time": 90,
+            "addedTime": 999,
+            "timeSeconds": 5400,
+            "reversedPeriodTime": 1,
+            "reversedPeriodTimeSeconds": 0,
+            "periodTimeSeconds": 2700,
+            "incidentType": "period"
+        },
+        {
+            "player": {
+                "name": "Wallace",
+                "slug": "wallace",
+                "shortName": "Wallace",
+                "position": "F",
+                "jerseyNumber": "10",
+                "height": 179,
+                "userCount": 15,
+                "gender": "M",
+                "id": 1020694,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 898560000,
+                "proposedMarketValueRaw": {
+                    "value": 160000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "والاس"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "والاس"
+                    }
+                }
+            },
+            "playerName": "Wallace",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 119565426,
+            "time": 90,
+            "addedTime": 3,
+            "isHome": false,
+            "incidentClass": "yellowRed",
+            "reversedPeriodTime": 1,
+            "incidentType": "card"
+        },
+        {
+            "player": {
+                "name": "Lukas Tursch",
+                "slug": "lukas-tursch",
+                "shortName": "L. Tursch",
+                "position": "D",
+                "jerseyNumber": "23",
+                "height": 184,
+                "userCount": 5,
+                "gender": "M",
+                "id": 282091,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 828057600,
+                "proposedMarketValueRaw": {
+                    "value": 210000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "لوكاس تورش"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ل. تورش"
+                    }
+                }
+            },
+            "playerName": "Lukas Tursch",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 119565439,
+            "time": 90,
+            "addedTime": 1,
+            "isHome": true,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 1,
+            "incidentType": "card"
+        },
+        {
+            "player": {
+                "name": "Haris Tabaković",
+                "slug": "haris-tabakovic",
+                "shortName": "H. Tabaković",
+                "position": "F",
+                "jerseyNumber": "15",
+                "height": 196,
+                "userCount": 3708,
+                "gender": "M",
+                "id": 259803,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 772070400,
+                "proposedMarketValueRaw": {
+                    "value": 3600000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "هاريس طاباكوفيتش",
+                        "bn": "হারিস তাবাকোভিচ",
+                        "hi": "हारिस तबाकोविक"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ه. طاباكوفيتش",
+                        "bn": "এইচ. তাবাকোভিচ",
+                        "hi": "एच. तबाकोविक"
+                    }
+                }
+            },
+            "playerName": "Haris Tabaković",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 119565423,
+            "time": 90,
+            "addedTime": 1,
+            "isHome": false,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 1,
+            "incidentType": "card"
+        },
+        {
+            "length": 4,
+            "time": 90,
+            "addedTime": 0,
+            "reversedPeriodTime": 1,
+            "incidentType": "injuryTime"
+        },
+        {
+            "player": {
+                "name": "Wallace",
+                "slug": "wallace",
+                "shortName": "Wallace",
+                "position": "F",
+                "jerseyNumber": "10",
+                "height": 179,
+                "userCount": 15,
+                "gender": "M",
+                "id": 1020694,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 898560000,
+                "proposedMarketValueRaw": {
+                    "value": 160000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "والاس"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "والاس"
+                    }
+                }
+            },
+            "playerName": "Wallace",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 119565419,
+            "time": 88,
+            "isHome": false,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 3,
+            "incidentType": "card"
+        },
+        {
+            "playerIn": {
+                "name": "Tobias Messing",
+                "slug": "tobias-messing",
+                "shortName": "T. Messing",
+                "position": "D",
+                "jerseyNumber": "24",
+                "height": 177,
+                "userCount": 4,
+                "gender": "M",
+                "id": 940278,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 977616000,
+                "proposedMarketValueRaw": {
+                    "value": 73000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "توبيا مسينغ"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ت. مسينغ"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Danilo Mitrović",
+                "slug": "danilo-mitrovic",
+                "shortName": "D. Mitrović",
+                "position": "D",
+                "jerseyNumber": "25",
+                "height": 183,
+                "userCount": 39,
+                "gender": "M",
+                "id": 987618,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 985132800,
+                "proposedMarketValueRaw": {
+                    "value": 205000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "دانييلو ميتروفيتش"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "د. ميتروفيتش"
+                    }
+                }
+            },
+            "id": 119790892,
+            "time": 85,
+            "injury": false,
+            "isHome": true,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 6,
+            "incidentType": "substitution"
+        },
+        {
+            "player": {
+                "name": "Michael Lageder",
+                "slug": "michael-lageder",
+                "shortName": "M. Lageder",
+                "position": "D",
+                "height": 178,
+                "userCount": 1,
+                "gender": "M",
+                "id": 126230,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 672451200,
+                "proposedMarketValueRaw": {
+                    "value": 130000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "مايكل لاجيدير"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "م. لاجيدير"
+                    }
+                }
+            },
+            "playerName": "Michael Lageder",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 119565413,
+            "time": 83,
+            "isHome": false,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 8,
+            "incidentType": "card"
+        },
+        {
+            "from": "penalty",
+            "homeScore": 5,
+            "awayScore": 2,
+            "player": {
+                "name": "Haris Tabaković",
+                "slug": "haris-tabakovic",
+                "shortName": "H. Tabaković",
+                "position": "F",
+                "jerseyNumber": "15",
+                "height": 196,
+                "userCount": 3708,
+                "gender": "M",
+                "id": 259803,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 772070400,
+                "proposedMarketValueRaw": {
+                    "value": 3600000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "هاريس طاباكوفيتش",
+                        "bn": "হারিস তাবাকোভিচ",
+                        "hi": "हारिस तबाकोविक"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ه. طاباكوفيتش",
+                        "bn": "এইচ. তাবাকোভিচ",
+                        "hi": "एच. तबाकोविक"
+                    }
+                }
+            },
+            "footballPassingNetworkAction": [],
+            "id": 134625036,
+            "time": 82,
+            "isHome": false,
+            "incidentClass": "penalty",
+            "reversedPeriodTime": 9,
+            "incidentType": "goal"
+        },
+        {
+            "playerIn": {
+                "name": "Michael Lageder",
+                "slug": "michael-lageder",
+                "shortName": "M. Lageder",
+                "position": "D",
+                "height": 178,
+                "userCount": 1,
+                "gender": "M",
+                "id": 126230,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 672451200,
+                "proposedMarketValueRaw": {
+                    "value": 130000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "مايكل لاجيدير"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "م. لاجيدير"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Adriano Bertaccini",
+                "firstName": "Adriano",
+                "lastName": "Bertaccini",
+                "slug": "adriano-bertaccini",
+                "shortName": "A. Bertaccini",
+                "position": "F",
+                "jerseyNumber": "91",
+                "height": 173,
+                "userCount": 788,
+                "gender": "M",
+                "id": 867250,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 966124800,
+                "proposedMarketValueRaw": {
+                    "value": 5200000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "أدريانو بيرتاكيني"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "أ. بيرتاكيني"
+                    }
+                }
+            },
+            "id": 119790862,
+            "time": 77,
+            "injury": false,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 14,
+            "incidentType": "substitution"
+        },
+        {
+            "player": {
+                "name": "Pius Grabher",
+                "firstName": "Pius",
+                "lastName": "Grabher",
+                "slug": "pius-grabher",
+                "shortName": "P. Grabher",
+                "position": "M",
+                "jerseyNumber": "23",
+                "height": 170,
+                "userCount": 15,
+                "gender": "M",
+                "id": 111023,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 745027200,
+                "proposedMarketValueRaw": {
+                    "value": 180000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "بيوس غرايبر"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ب. غرايبر"
+                    }
+                }
+            },
+            "playerName": "Pius Grabher",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 119565400,
+            "time": 74,
+            "isHome": false,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 17,
+            "incidentType": "card"
+        },
+        {
+            "playerIn": {
+                "name": "Oliver Filip",
+                "slug": "oliver-filip",
+                "shortName": "O. Filip",
+                "position": "M",
+                "height": 175,
+                "userCount": 4,
+                "gender": "M",
+                "id": 794955,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 884822400,
+                "proposedMarketValueRaw": {
+                    "value": 155000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "أوليفر فيليب"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "أ. فيليب"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Fabian Schubert",
+                "firstName": "",
+                "lastName": "",
+                "slug": "fabian-schubert",
+                "shortName": "F. Schubert",
+                "position": "F",
+                "jerseyNumber": "9",
+                "height": 194,
+                "userCount": 59,
+                "gender": "M",
+                "id": 797888,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 778118400,
+                "proposedMarketValueRaw": {
+                    "value": 310000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "فابيان شوبيرت"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ف. شوبيرت"
+                    }
+                }
+            },
+            "id": 119790856,
+            "time": 71,
+            "injury": false,
+            "isHome": true,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 20,
+            "incidentType": "substitution"
+        },
+        {
+            "playerIn": {
+                "name": "Felix Strauss",
+                "firstName": "Felix Strauss",
+                "slug": "felix-strauss",
+                "shortName": "F. Strauss",
+                "position": "D",
+                "jerseyNumber": "4",
+                "height": 186,
+                "userCount": 39,
+                "gender": "M",
+                "id": 1064209,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 985564800,
+                "proposedMarketValueRaw": {
+                    "value": 420000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "فيليكس شتراوس"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ف. شتراوس"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Bernhard Janeczek",
+                "slug": "bernhard-janeczek",
+                "shortName": "B. Janeczek",
+                "position": "D",
+                "height": 185,
+                "userCount": 2,
+                "gender": "M",
+                "id": 126193,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 700185600,
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "برنارد يانيكزيك"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ب. يانيكزيك"
+                    }
+                }
+            },
+            "id": 119790854,
+            "time": 71,
+            "injury": false,
+            "isHome": true,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 20,
+            "incidentType": "substitution"
+        },
+        {
+            "from": "penalty",
+            "homeScore": 5,
+            "awayScore": 1,
+            "player": {
+                "name": "Fabian Schubert",
+                "firstName": "",
+                "lastName": "",
+                "slug": "fabian-schubert",
+                "shortName": "F. Schubert",
+                "position": "F",
+                "jerseyNumber": "9",
+                "height": 194,
+                "userCount": 59,
+                "gender": "M",
+                "id": 797888,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 778118400,
+                "proposedMarketValueRaw": {
+                    "value": 310000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "فابيان شوبيرت"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ف. شوبيرت"
+                    }
+                }
+            },
+            "footballPassingNetworkAction": [],
+            "id": 134624375,
+            "time": 67,
+            "isHome": true,
+            "incidentClass": "penalty",
+            "reversedPeriodTime": 24,
+            "incidentType": "goal"
+        },
+        {
+            "player": {
+                "name": "Adriano Bertaccini",
+                "firstName": "Adriano",
+                "lastName": "Bertaccini",
+                "slug": "adriano-bertaccini",
+                "shortName": "A. Bertaccini",
+                "position": "F",
+                "jerseyNumber": "91",
+                "height": 173,
+                "userCount": 788,
+                "gender": "M",
+                "id": 867250,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 966124800,
+                "proposedMarketValueRaw": {
+                    "value": 5200000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "أدريانو بيرتاكيني"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "أ. بيرتاكيني"
+                    }
+                }
+            },
+            "playerName": "Adriano Bertaccini",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 119565391,
+            "time": 63,
+            "isHome": false,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 28,
+            "incidentType": "card"
+        },
+        {
+            "playerIn": {
+                "name": "Daniel Steinwender",
+                "firstName": "Daniel",
+                "lastName": "Steinwender",
+                "slug": "daniel-steinwender",
+                "shortName": "D. Steinwender",
+                "position": "M",
+                "jerseyNumber": "10",
+                "height": 173,
+                "userCount": 1,
+                "gender": "M",
+                "id": 869484,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 894844800,
+                "proposedMarketValueRaw": {
+                    "value": 165000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "دانييل شتاينويندر"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "د. شتاينويندر"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Dániel Tiefenbach",
+                "firstName": "Dániel",
+                "lastName": "Tiefenbach",
+                "slug": "daniel-tiefenbach",
+                "shortName": "D. Tiefenbach",
+                "position": "M",
+                "height": 184,
+                "userCount": 45,
+                "gender": "M",
+                "id": 877196,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 934243200,
+                "proposedMarketValueRaw": {
+                    "value": 95000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "دانييل تيفينباخ"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "د. تيفينباخ"
+                    }
+                }
+            },
+            "id": 119790838,
+            "time": 62,
+            "injury": false,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 29,
+            "incidentType": "substitution"
+        },
+        {
+            "player": {
+                "name": "Stefano Surdanović",
+                "slug": "stefano-surdanovic",
+                "shortName": "S. Surdanović",
+                "position": "M",
+                "jerseyNumber": "23",
+                "height": 183,
+                "userCount": 87,
+                "gender": "M",
+                "id": 886062,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 911779200,
+                "proposedMarketValueRaw": {
+                    "value": 470000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "ستيفانو سوردانوفيتش"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "س. سوردانوفيتش"
+                    }
+                }
+            },
+            "playerName": "Stefano Surdanović",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 119565384,
+            "time": 57,
+            "isHome": true,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 34,
+            "incidentType": "card"
+        },
+        {
+            "playerIn": {
+                "name": "Wallace",
+                "slug": "wallace",
+                "shortName": "Wallace",
+                "position": "F",
+                "jerseyNumber": "10",
+                "height": 179,
+                "userCount": 15,
+                "gender": "M",
+                "id": 1020694,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 898560000,
+                "proposedMarketValueRaw": {
+                    "value": 160000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "والاس"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "والاس"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Christoph Freitag",
+                "slug": "christoph-freitag",
+                "shortName": "C. Freitag",
+                "position": "M",
+                "jerseyNumber": "8",
+                "height": 184,
+                "userCount": 1,
+                "id": 36424,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 632880000,
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "كريستوف فريتاج"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ك. فريتاج"
+                    }
+                }
+            },
+            "id": 119790815,
+            "time": 46,
+            "injury": false,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 45,
+            "incidentType": "substitution"
+        },
+        {
+            "text": "HT",
+            "homeScore": 4,
+            "awayScore": 1,
+            "isLive": false,
+            "time": 45,
+            "addedTime": 999,
+            "timeSeconds": 2700,
+            "reversedPeriodTime": 1,
+            "reversedPeriodTimeSeconds": 0,
+            "periodTimeSeconds": 2700,
+            "incidentType": "period"
+        },
+        {
+            "player": {
+                "name": "Turgay Gemicibaşı",
+                "firstName": "Turgay",
+                "lastName": "Gemicibasi",
+                "slug": "turgay-gemicibasi",
+                "shortName": "T. Gemicibaşi",
+                "position": "M",
+                "jerseyNumber": "8",
+                "height": 180,
+                "userCount": 33,
+                "gender": "M",
+                "id": 807398,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 830217600,
+                "proposedMarketValueRaw": {
+                    "value": 215000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "تورغاي جيميتشباشي"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ت. جيميتشباشي"
+                    }
+                }
+            },
+            "playerName": "Turgay Gemicibaşi",
+            "reason": "Foul",
+            "rescinded": false,
+            "id": 119565340,
+            "time": 45,
+            "isHome": true,
+            "incidentClass": "yellow",
+            "reversedPeriodTime": 1,
+            "incidentType": "card"
+        },
+        {
+            "length": 3,
+            "time": 45,
+            "addedTime": 0,
+            "reversedPeriodTime": 1,
+            "incidentType": "injuryTime"
+        },
+        {
+            "homeScore": 4,
+            "awayScore": 1,
+            "player": {
+                "name": "Stefano Surdanović",
+                "slug": "stefano-surdanovic",
+                "shortName": "S. Surdanović",
+                "position": "M",
+                "jerseyNumber": "23",
+                "height": 183,
+                "userCount": 87,
+                "gender": "M",
+                "id": 886062,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 911779200,
+                "proposedMarketValueRaw": {
+                    "value": 470000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "ستيفانو سوردانوفيتش"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "س. سوردانوفيتش"
+                    }
+                }
+            },
+            "footballPassingNetworkAction": [],
+            "id": 134622514,
+            "time": 40,
+            "isHome": true,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 6,
+            "incidentType": "goal"
+        },
+        {
+            "homeScore": 3,
+            "awayScore": 1,
+            "player": {
+                "name": "Haris Tabaković",
+                "slug": "haris-tabakovic",
+                "shortName": "H. Tabaković",
+                "position": "F",
+                "jerseyNumber": "15",
+                "height": 196,
+                "userCount": 3708,
+                "gender": "M",
+                "id": 259803,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 772070400,
+                "proposedMarketValueRaw": {
+                    "value": 3600000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "هاريس طاباكوفيتش",
+                        "bn": "হারিস তাবাকোভিচ",
+                        "hi": "हारिस तबाकोविक"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ه. طاباكوفيتش",
+                        "bn": "এইচ. তাবাকোভিচ",
+                        "hi": "एच. तबाकोविक"
+                    }
+                }
+            },
+            "assist1": {
+                "name": "Fabian Gmeiner",
+                "firstName": "Fabian",
+                "lastName": "Gmeiner",
+                "slug": "fabian-gmeiner",
+                "shortName": "F. Gmeiner",
+                "position": "D",
+                "jerseyNumber": "7",
+                "height": 177,
+                "userCount": 10,
+                "gender": "M",
+                "id": 827462,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 854323200,
+                "proposedMarketValueRaw": {
+                    "value": 260000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "فابيان غماينر"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ف. غماينر"
+                    }
+                }
+            },
+            "footballPassingNetworkAction": [],
+            "id": 134622485,
+            "time": 39,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 7,
+            "incidentType": "goal"
+        },
+        {
+            "homeScore": 3,
+            "awayScore": 0,
+            "player": {
+                "name": "Lukas Tursch",
+                "slug": "lukas-tursch",
+                "shortName": "L. Tursch",
+                "position": "D",
+                "jerseyNumber": "23",
+                "height": 184,
+                "userCount": 5,
+                "gender": "M",
+                "id": 282091,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 828057600,
+                "proposedMarketValueRaw": {
+                    "value": 210000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "لوكاس تورش"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ل. تورش"
+                    }
+                }
+            },
+            "assist1": {
+                "name": "Turgay Gemicibaşı",
+                "firstName": "Turgay",
+                "lastName": "Gemicibasi",
+                "slug": "turgay-gemicibasi",
+                "shortName": "T. Gemicibaşi",
+                "position": "M",
+                "jerseyNumber": "8",
+                "height": 180,
+                "userCount": 33,
+                "gender": "M",
+                "id": 807398,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 830217600,
+                "proposedMarketValueRaw": {
+                    "value": 215000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "تورغاي جيميتشباشي"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ت. جيميتشباشي"
+                    }
+                }
+            },
+            "footballPassingNetworkAction": [],
+            "id": 134622152,
+            "time": 31,
+            "isHome": true,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 15,
+            "incidentType": "goal"
+        },
+        {
+            "playerIn": {
+                "name": "Adriano Bertaccini",
+                "firstName": "Adriano",
+                "lastName": "Bertaccini",
+                "slug": "adriano-bertaccini",
+                "shortName": "A. Bertaccini",
+                "position": "F",
+                "jerseyNumber": "91",
+                "height": 173,
+                "userCount": 788,
+                "gender": "M",
+                "id": 867250,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 966124800,
+                "proposedMarketValueRaw": {
+                    "value": 5200000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "أدريانو بيرتاكيني"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "أ. بيرتاكيني"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Sebastian Feyrer",
+                "firstName": "Sebastian",
+                "lastName": "Feyrer",
+                "slug": "sebastian-feyrer",
+                "shortName": "S. Feyrer",
+                "position": "D",
+                "jerseyNumber": "4",
+                "height": 186,
+                "userCount": 1,
+                "gender": "M",
+                "id": 843582,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 860025600,
+                "proposedMarketValueRaw": {
+                    "value": 170000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "سيباستيان فيرير"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "س. فيرير"
+                    }
+                }
+            },
+            "id": 119790785,
+            "time": 29,
+            "injury": false,
+            "isHome": false,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 17,
+            "incidentType": "substitution"
+        },
+        {
+            "homeScore": 2,
+            "awayScore": 0,
+            "player": {
+                "name": "Fabian Schubert",
+                "firstName": "",
+                "lastName": "",
+                "slug": "fabian-schubert",
+                "shortName": "F. Schubert",
+                "position": "F",
+                "jerseyNumber": "9",
+                "height": 194,
+                "userCount": 59,
+                "gender": "M",
+                "id": 797888,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 778118400,
+                "proposedMarketValueRaw": {
+                    "value": 310000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "فابيان شوبيرت"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ف. شوبيرت"
+                    }
+                }
+            },
+            "assist1": {
+                "name": "Stefano Surdanović",
+                "slug": "stefano-surdanovic",
+                "shortName": "S. Surdanović",
+                "position": "M",
+                "jerseyNumber": "23",
+                "height": 183,
+                "userCount": 87,
+                "gender": "M",
+                "id": 886062,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 911779200,
+                "proposedMarketValueRaw": {
+                    "value": 470000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "ستيفانو سوردانوفيتش"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "س. سوردانوفيتش"
+                    }
+                }
+            },
+            "footballPassingNetworkAction": [],
+            "id": 134621714,
+            "time": 21,
+            "isHome": true,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 25,
+            "incidentType": "goal"
+        },
+        {
+            "playerIn": {
+                "name": "Hannes Huber",
+                "firstName": "Hannes Huber",
+                "lastName": "",
+                "slug": "hannes-huber",
+                "shortName": "H. Huber",
+                "position": "M",
+                "jerseyNumber": "30",
+                "height": 164,
+                "userCount": 1,
+                "gender": "M",
+                "id": 1064211,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 951091200,
+                "proposedMarketValueRaw": {
+                    "value": 78000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "هانيز هوبر"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ه. هوبر"
+                    }
+                }
+            },
+            "playerOut": {
+                "name": "Philipp Pomer",
+                "firstName": "Philipp",
+                "lastName": "Pomer",
+                "slug": "philipp-pomer",
+                "shortName": "P. Pomer",
+                "position": "M",
+                "jerseyNumber": "17",
+                "height": 180,
+                "userCount": 19,
+                "gender": "M",
+                "id": 843501,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 871344000,
+                "proposedMarketValueRaw": {
+                    "value": 375000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "فيليب بومر"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ف. بومر"
+                    }
+                }
+            },
+            "id": 119790773,
+            "time": 15,
+            "injury": false,
+            "isHome": true,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 31,
+            "incidentType": "substitution"
+        },
+        {
+            "homeScore": 1,
+            "awayScore": 0,
+            "player": {
+                "name": "Philipp Pomer",
+                "firstName": "Philipp",
+                "lastName": "Pomer",
+                "slug": "philipp-pomer",
+                "shortName": "P. Pomer",
+                "position": "M",
+                "jerseyNumber": "17",
+                "height": 180,
+                "userCount": 19,
+                "gender": "M",
+                "id": 843501,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 871344000,
+                "proposedMarketValueRaw": {
+                    "value": 375000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "فيليب بومر"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "ف. بومر"
+                    }
+                }
+            },
+            "assist1": {
+                "name": "Aleksandar Kostić",
+                "slug": "aleksandar-kostic",
+                "shortName": "A. Kostić",
+                "position": "M",
+                "jerseyNumber": "25",
+                "height": 166,
+                "userCount": 11,
+                "gender": "M",
+                "id": 575072,
+                "marketValueCurrency": "EUR",
+                "dateOfBirthTimestamp": 813456000,
+                "proposedMarketValueRaw": {
+                    "value": 155000,
+                    "currency": "EUR"
+                },
+                "fieldTranslations": {
+                    "nameTranslation": {
+                        "ar": "ألكسندر كوستيتش"
+                    },
+                    "shortNameTranslation": {
+                        "ar": "أ. كوستيتش"
+                    }
+                }
+            },
+            "footballPassingNetworkAction": [],
+            "id": 134621056,
+            "time": 6,
+            "isHome": true,
+            "incidentClass": "regular",
+            "reversedPeriodTime": 40,
+            "incidentType": "goal"
+        }
+    ],
+    "home": {
+        "goalkeeperColor": {
+            "primary": "ffff00",
+            "number": "000000",
+            "outline": "ffff00",
+            "fancyNumber": "222226"
+        },
+        "playerColor": {
+            "primary": "0a51f5",
+            "number": "ffffff",
+            "outline": "0a51f5",
+            "fancyNumber": "ffffff"
+        }
+    },
+    "away": {
+        "goalkeeperColor": {
+            "primary": "ff8000",
+            "number": "ffffff",
+            "outline": "ff8000",
+            "fancyNumber": "222226"
+        },
+        "playerColor": {
+            "primary": "00a841",
+            "number": "ffffff",
+            "outline": "00a841",
+            "fancyNumber": "ffffff"
+        }
+    }
+}
