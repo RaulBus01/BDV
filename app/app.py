@@ -966,7 +966,7 @@ def tab_network(df: pd.DataFrame):
                 colorscale=cmap_name,
                 cmin=0, cmax=100,
                 symbol=symbol,
-                line=dict(width=1, color="white"),
+                line=dict(width=1, color="black"),
                 colorbar=dict(
                     title=color_field,
                     x=1.05,
@@ -977,7 +977,7 @@ def tab_network(df: pd.DataFrame):
             ),
             text=[n.split()[-1] for n in nodes],  # surname only for readability
             textposition="top center",
-            textfont=dict(size=8, color="white"),
+            textfont=dict(size=8, color="black"),
             hovertext=hover,
             hoverinfo="text",
             name=name,
